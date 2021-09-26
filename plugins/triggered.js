@@ -22,8 +22,6 @@ try {
 }
 
 
-handler.help = ['trigger (caption|reply media)']
-handler.tags = ['sticker']
 handler.command = /^(trigger(ed)?)$/i
 handler.limit = true
 handler.group = false
