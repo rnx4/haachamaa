@@ -60,8 +60,6 @@ let teks = `
       }
     } ,m)
       }
-handler.help = ['ovlord']
-handler.tags = ['weebs']
 handler.command = /^ovlord$/i
 handler.register = true
 handler.group = false
