@@ -17,8 +17,6 @@ let stiker = await sticker(null, link, 'Pat', 'Haachamaa')
  } catch (e) {
   }
 }
-handler.help = ['pat']
-handler.tags = ['expression']
 handler.command = /^pat/i
 handler.owner = false
 handler.mods = false
