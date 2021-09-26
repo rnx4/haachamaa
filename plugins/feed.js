@@ -3,6 +3,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
     let rubah = global.DATABASE._data.users[m.sender].rubah
     let kuda = global.DATABASE._data.users[m.sender].kuda
     let kucing = global.DATABASE._data.users[m.sender].kucing
+    let anjing = global.DATABASE._data.users[m.sender].anjing
     switch (type) {
         case 'rubah':
             if (rubah == 0) return m.reply('*Kamu belum memiliki Pet Rubah*')
@@ -76,9 +77,9 @@ let handler = async (m, { conn, args, usedPrefix }) => {
         case 'anjing':
             if (anjing == 0) return m.reply('*Kamu belum memiliki Pet Anjing*')
             if (anjing == 5) return m.reply('*Pet kamu dah lvl max*')
-            let __waktur = (new Date - global.DATABASE._data.users[m.sender].anjinglastclaim)
-            let _waktur = (600000 - __waktur)
-            let waktur = clockString(_waktur)
+            let __waktua = (new Date - global.DATABASE._data.users[m.sender].anjinglastclaim)
+            let _waktua = (600000 - __waktua)
+            let waktur = clockString(_waktua)
             if (new Date - global.DATABASE._data.users[m.sender].anjinglastclaim > 600000) {
                 if (global.DATABASE._data.users[m.sender].makananpet > 0) {
                     global.DATABASE._data.users[m.sender].makananpet -= 1
