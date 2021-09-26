@@ -3,7 +3,7 @@ let handler = async function(m, { conn, args, isPrems, isOwner }) {
 const time = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
-      this.fakeReply(m.chat, `*Bye Semua* \n\nHaachamaa Pamit Pergi, '0@s.whatsapp.net', `${conn.user.name} Bot Rusuh`, 'status@broadcast')
+      this.fakeReply(m.chat, `*Bye Semua* 🙂, *Haachamaa pamit pulang*`, '0@s.whatsapp.net', `${conn.user.name} Bot Rusuh`, 'status@broadcast')
       await time(5000)
   await conn.groupLeave(m.key.remoteJid)
 }
