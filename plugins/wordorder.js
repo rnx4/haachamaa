@@ -37,8 +37,6 @@ Bonus: Rp${poin}
       }, timeout)
     ]
   }
-  handler.help = ['wordorder']
-  handler.tags = ['game']
   handler.command = /^wordorder/i
   handler.register = true
   handler.limit = true
