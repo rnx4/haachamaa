@@ -1,22 +1,28 @@
-global.owner = ['62887436568613','6289524339740'] // Put your number here
+global.owner = ['62887436568613'] // Put your number here
 global.mods = [] // Want some help?
-global.prems = ['62887436568613','6281387880724','6282328303332'] // Premium user has unlimited limit
-global.wait = "[❗]  ```Wait a minute...```"
+global.prems = ['62887436568613'] // Premium user has unlimited limit
+global.wait = "[❗] ```Wait a minute...```"
 global.APIs = { // API Prefix
   // name: 'https://website'
+  hardianto: 'https://hardianto.xyz',
   nrtm: 'https://nurutomo.herokuapp.com',
   neoxr: 'https://neoxr-api.herokuapp.com',
-  xteam: 'https://api.xteam.xyz'
+  xteam: 'https://api.xteam.xyz',
+  zeks: 'https://api.zeks.xyz',
+  zekais: 'http://zekais-api.herokuapp.com',
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
-  'https://api.xteam.xyz': 'APIKEYMU',
-  'https://neoxr-api.herokuapp.com': 'yntkts'
+  'https://hardianto.xyz': 'hardianto',
+  'https://api.xteam.xyz': 'Apikeymu',
+  'https://neoxr-api.herokuapp.com': 'yntkts',
+  'https://api.zeks.xyz': 'apikeymu',
+  'http://zekais-api.herokuapp.com': 'apikeymu',
 }
 
 // Sticker WM
-global.packname = 'I hope you\'re fine'
-global.author = 'Violet-bot'
+global.packname = 'Uwuwulululu'
+global.author = 'Haachamaaa'
 
 global.multiplier = 89 // The higher, The harder levelup
 
