@@ -2,7 +2,7 @@
 
 ## Uwuwuwwlulululuuuu
 
-![Violet](https://user-images.githubusercontent.com/84166927/132962870-56def514-53eb-4a6e-9c85-93fe114a2bbc.png)
+![Arrghhh](https://user-images.githubusercontent.com/84166927/134810796-be992262-6a08-452e-907f-60bbdbb0d99e.png)
 
 
 #### Join Heree Bruhh
