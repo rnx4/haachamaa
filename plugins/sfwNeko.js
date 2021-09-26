@@ -14,8 +14,6 @@ let handler = async (m, { conn }) => {
         throw '_*Owner belum membayar tagihan fitur ini*_'
     }
 }
-handler.help = ['neko']
-handler.tags = ['weebs']
 handler.command = /^(neko)$/i
 handler.premium = true
 handler.register = true
