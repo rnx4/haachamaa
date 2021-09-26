@@ -17,8 +17,6 @@ let stiker = await sticker(null, url, 'Punch', 'Haachamaa')
  } catch (e) {
   }
 }
-handler.help = ['punch']
-handler.tags = ['expression']
 handler.command = /^punch/i
 handler.register = true
 handler.limit = true
