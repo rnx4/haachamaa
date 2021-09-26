@@ -381,8 +381,6 @@ Sampah:     ${Ssampah}\n\n
     }
 }
 
-handler.help = ['shop <sell|buy> <args>', 'toko <sell|buy> <args>']
-handler.tags = ['rpg']
 handler.register = true
     
 handler.command = /^(shop|toko|buy|beli|sell|jual)$/i
