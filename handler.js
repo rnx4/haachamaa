@@ -42,7 +42,6 @@ module.exports = {
           
           if (!isNumber(user.potion)) user.potion = 0
           if (!isNumber(user.sampah)) user.sampah = 0
-          if (!isNumber(user.armor)) user.armor = 0
           
           if (!isNumber(user.kucing)) user.kucing = 0       
           if (!isNumber(user.kucinglastclaim)) user.kucinglastclaim = 0
@@ -94,7 +93,6 @@ module.exports = {
           pet: 0,
           potion: 0,
           sampah: 0,
-          armor: 0,
           kucing: 0,
           kucinglastclaim: 0,
           kuda: 0,
@@ -446,7 +444,7 @@ global.dfail = (type, m, conn, usedPrefix) => {
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
     admin: 'Perintah ini hanya untuk *Admin* grup!',
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama|umur*\n\nContoh: *#daftar Violet|13*`
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama|umur*\n\nContoh: *#daftar Haachamaa|19*`
   }[type]
   if (msg) return m.reply(msg)
 }
