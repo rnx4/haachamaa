@@ -8,8 +8,6 @@ let json= await res.json()
   const ardi =  `*judul:* "${json.title}"\n\n*info:* ${json.info}\n\n*sinopsis:* ${json.sinopsis}\n\n*link download:* ${json.link_dl}`
      conn.sendFile(m.chat,json.thumb, 'image.jpg', ardi, m)
 }
-handler.help = ['kusonime <judul>']
-handler.tags = ['weebs']
 handler.command = /^kusonime$/i
 handler.group = false
 handler.register = true
