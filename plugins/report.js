@@ -9,8 +9,7 @@ let handler = async(m, { conn, text }) => {
     m.reply(laporan, m.sender) // Mwehehehehe
     m.reply('✔️Masalah telah di laporkan ke Owner Bot, laporan palsu/main2 tidak akan ditanggapi!')
 }
-handler.help = ['bug', 'report'].map(v => v + ' <laporan>')
-handler.tags = ['info']
 handler.command = /^(bug|report)$/i
+handler.register = true
 
 module.exports = handler
