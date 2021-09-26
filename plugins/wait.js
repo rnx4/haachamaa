@@ -33,8 +33,6 @@ ${similarity < 0.89 ? 'Saya Memiliki Keyakinan Rendah Tentang Hal Ini' : ''}
 `.trim()
   conn.sendFile(m.chat, link, 'srcanime.mp4', `${nobuyaki}`, m)
 }
-handler.help = ['wait (caption|reply image)']
-handler.tags = ['tools']
 handler.command = /^(wait)$/i
 handler.register = true
 handler.limit = true
