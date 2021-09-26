@@ -1,16 +1,16 @@
 {
-  "name": "Violet",
+  "name": "Haachamaa",
   "version": "2.1.2",
-  "description": "Unx  Loyal Couple",
+  "description": "Uwuwuwlululuu",
   "depecrated": false,
-  "main": "violet.js",
+  "main": "haachamaa.js",
   "directories": {
     "lib": "lib",
     "src": "src",
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node violet.js",
+    "start": "node haachamaa.js",
     "test": "node test.js"
   },
   "keywords": [
@@ -19,13 +19,13 @@
     "whatsapp",
     "js-whatsapp"
   ],
-  "homepage": "https://github.com/unx21/violet",
+  "homepage": "https://github.com/unx21/haachamaa",
   "author": {
     "name": "unx"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unx21/violet.git"
+    "url": "git+https://github.com/unx21/haachamaa.git"
   },
   "bugs": {
     "url": "https://github.com/Nurutomo/wabot-aq/issues"
