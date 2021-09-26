@@ -45,8 +45,6 @@ await conn.reply(m.chat, caption,/* {
       "jpegThumbnail": tnbot} } }, { contextInfo: { mentionedJid: [m.sender] } }*/m)
 global.DATABASE._data.users[m.sender].uang += 10000
 }
-handler.help = ['daftar', 'register'].map(v => v + ' <nama>|<umur>')
-handler.tags = ['main']
 
 handler.command = /^(daftar|reg(ister)?)$/i
 handler.disabled = false
