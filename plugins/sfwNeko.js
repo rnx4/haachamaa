@@ -7,7 +7,7 @@ let handler = async (m, { conn }) => {
         let res = await fetch(global.API('xteam', '/randomimage/sfwneko', {}, 'APIKEY'))
         let img = await res.buffer()
         conn.sendMessage(m.chat, img, MessageType.image, {
-            quoted: m, caption: '*©Violet*'
+            quoted: m, caption: '*©Haachamaa*'
         })
     } catch (e) {
         console.log(e)
@@ -15,7 +15,8 @@ let handler = async (m, { conn }) => {
     }
 }
 handler.command = /^(neko)$/i
-handler.premium = true
+handler.limit = 3
+handler.premium = false
 handler.register = true
 
 module.exports = handler
