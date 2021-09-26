@@ -3,6 +3,7 @@ let handler = async (m) => {
   
 let teks = `
 ╭─ *「 Haachamaa 」*
+│
 │ • *Link:* https://github.com/Nurutomo/wabot-aq
 │ • *Link:* https://github.com/unx21/hachama
 │
