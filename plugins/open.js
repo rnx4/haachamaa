@@ -1,7 +1,7 @@
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m, { conn, command, args, text, usedPrefix, DevMode }) => {
   try {
-    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 1000 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*common*\n*uncommon*\n*rare*\n*epic*\n*mythic*\n*legendary*`
+    let bruh = `${usedPrefix}open <crate name> < 1 | 10 | 100 | 1000 >\n\nContoh penggunaan: *${usedPrefix}open common 10*\n\nlist crate:\n*common*\n*uncommon*\n*rare*\n*epic*\n*rare*\n*epic*\n*mythic*\n*legendary*`
     let _lmao = args[0]
     let Lmao = `Hanya support 1, 10, 100, 1000\nContoh penggunaan: *${usedPrefix}open ${args > 2 ? _lmao : pickRandom(['common', 'uncommon', 'rare', 'epic', 'mythic', 'legendary'])} 10*`
     let type = (args[0] || '').toLowerCase()
@@ -893,27 +893,27 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lk3 > 0 ? `\nKoin: ${lk3}
         case 'pet':
             let _mknp = pickRandom([1, 2, 1, 5, 3, 2, 1, 2, 4, 1, 3, 5, 2, 4, 3])
             let mknp = (_mknp * 1)
-            let anjing = global.DATABASE._data.users[m.sender].anjing
             let kucing = global.DATABASE._data.users[m.sender].kucing
+            let anjing = global.DATABASE._data.users[m.sender].anjing
             let rubah = global.DATABASE._data.users[m.sender].rubah
             let kuda = global.DATABASE._data.users[m.sender].kuda
-            let _pet = `${pickRandom(['anjing', 'kucing', 'rubah', 'kuda'])}`.trim()
+            let _pet = `${pickRandom(['kucing', 'anjing', 'rubah', 'kuda'])}`.trim()
             if (global.DATABASE._data.users[m.sender].pet > 0) { 
                 global.DATABASE._data.users[m.sender].pet -= 1
-                if (_pet == 'anjing' && anjing > 0) {
-                    global.DATABASE._data.users[m.sender].potion += 2
-                    global.DATABASE._data.users[m.sender].makananpet += mknp * 1
-                    conn.reply(m.chat, `Anda sudah memiliki pet ${_pet}, Hadiahmu diganti dengan 2 potion${mknp > 0 ? ` Dan ${mknp} Makanan Pet` : ''}`, m)
-                } else if (_pet == 'anjing' && anjing == 0) {
-                    global.DATABASE._data.users[m.sender].anjing += 1
-                    global.DATABASE._data.users[m.sender].makananpet += mknp * 1
-                    conn.reply(m.chat, `*Selamat Anda mendapatkan pet${_pet} ${mknp > 0 ? ` Dan ${mknp} Makanan Pet*` : '*'}`, m)
                 if (_pet == 'kucing' && kucing > 0) {
                     global.DATABASE._data.users[m.sender].potion += 2
                     global.DATABASE._data.users[m.sender].makananpet += mknp * 1
                     conn.reply(m.chat, `Anda sudah memiliki pet ${_pet}, Hadiahmu diganti dengan 2 potion${mknp > 0 ? ` Dan ${mknp} Makanan Pet` : ''}`, m)
                 } else if (_pet == 'kucing' && kucing == 0) {
                     global.DATABASE._data.users[m.sender].kucing += 1
+                    global.DATABASE._data.users[m.sender].makananpet += mknp * 1
+                    conn.reply(m.chat, `*Selamat Anda mendapatkan pet${_pet} ${mknp > 0 ? ` Dan ${mknp} Makanan Pet*` : '*'}`, m)
+                } else if (_pet == 'anjing' && anjing > 0) {
+                    global.DATABASE._data.users[m.sender].potion += 2
+                    global.DATABASE._data.users[m.sender].makananpet += mknp * 1
+                    conn.reply(m.chat, `Anda sudah memiliki pet ${_pet}, Hadiahmu diganti dengan 2 potion${mknp > 0 ? ` Dan ${mknp} Makanan Pet` : ''}`, m)
+                } else if (_pet == 'anjing' && anjing == 0) {
+                    global.DATABASE._data.users[m.sender].anjing += 1
                     global.DATABASE._data.users[m.sender].makananpet += mknp * 1
                     conn.reply(m.chat, `*Selamat Anda mendapatkan pet${_pet} ${mknp > 0 ? ` Dan ${mknp} Makanan Pet*` : '*'}`, m)
                 } else if (_pet == 'rubah' && rubah > 0) {
@@ -951,8 +951,6 @@ Anda telah membuka *Legendary crate* dan mendapatkan:${lk3 > 0 ? `\nKoin: ${lk3}
     }
   }
 }
-handler.help = ['open <crate>', 'gacha <crate>']
-handler.tags = ['rpg']
 handler.command = /^(open|buka|gacha)$/i
 handler.register = true
 
