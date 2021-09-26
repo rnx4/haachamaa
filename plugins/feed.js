@@ -79,7 +79,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
             if (anjing == 5) return m.reply('*Pet kamu dah lvl max*')
             let __waktua = (new Date - global.DATABASE._data.users[m.sender].anjinglastclaim)
             let _waktua = (600000 - __waktua)
-            let waktur = clockString(_waktua)
+            let waktua = clockString(_waktua)
             if (new Date - global.DATABASE._data.users[m.sender].anjinglastclaim > 600000) {
                 if (global.DATABASE._data.users[m.sender].makananpet > 0) {
                     global.DATABASE._data.users[m.sender].makananpet -= 1
