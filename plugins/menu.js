@@ -42,6 +42,7 @@ const defaultMenu = {
 ║┊ ⍚ _BochilGaming_
 ║┊ ⍚ _Kokoronationz_
 ║┊ ⍚ _Jauhari_
+║┊ ⍚ _Unx21_
 ║┊ ⍚ _Dan Kawan-kawan_
 ╰═ ┅ ═══════
 `.trimStart(),
