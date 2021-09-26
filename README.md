@@ -24,7 +24,7 @@ Original [`wabot-aq`](https://GitHub.com/Nurutomo/wabot-aq)
 
 
 ### Prefix
-. # (default)
+.  #  +  ×  ÷  /  !  %  &  -  : (default)
 
 ## FOR TERMUX USER
 
