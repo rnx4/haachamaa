@@ -1,18 +1,18 @@
-console.log('Starting Violet-bot...')
+console.log('Haachamaaa eaak eaak...')
 let { spawn } = require('child_process')
 let path = require('path')
 let fs = require('fs')
 let package = require('./package.json')
 const CFonts  = require('cfonts')
-CFonts.say('Violet\nUnx Loyal Couple', {
+CFonts.say('Haachamaaa\nUwuwuwuululu', {
   font: 'chrome',
   align: 'center',
-  gradient: ['blue', 'magenta']
+  gradient: ['yellow', 'magenta']
 })
 CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
   font: 'console',
   align: 'center',
-  gradient: ['blue', 'magenta']
+  gradient: ['red', 'magenta']
 })
 
 var isRunning = false
@@ -27,7 +27,7 @@ function start(file) {
   CFonts.say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
-    gradient: ['blue', 'magenta']
+    gradient: ['cyan', 'magenta']
   })
   let p = spawn(process.argv[0], args, {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc']
