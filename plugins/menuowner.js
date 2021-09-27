@@ -23,8 +23,8 @@ let teks = `
 ┃ ⌲ _.delprem_  [ @user ]
 ┃ ⌲ _.debounce_
 ┃ ⌲ _.update_
-┃ ⌲ _.>_
-┃ ⌲ _.=>_
+┃ ⌲     _>_
+┃ ⌲    _=>_
 ┃ ⌲ _.kickall_
 ┃ ⌲ _.leavegc_
 ┃ ⌲ _.leavegroup_
