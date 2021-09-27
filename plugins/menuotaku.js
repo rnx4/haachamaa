@@ -29,7 +29,7 @@ let teks = `
 ├ ♡ _.snsou_  [ food war ] Ⓛ
 ├ ♡ _.tensura_  Ⓛ
 ├ ♡ _.waifu_  Ⓛ
-├ ♡ _.wpanime  Ⓛ
+├ ♡ _.wpanime_  Ⓛ
 └──────────
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Cara Menjadi Wibu Elit', 'status@broadcast')
