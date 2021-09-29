@@ -16,8 +16,6 @@ let handler = async (m, { conn, usedPrefix }) => {
     let common = global.DATABASE._data.users[m.sender].common
     let makananpet = global.DATABASE._data.users[m.sender].makananpet
     let uncommon = global.DATABASE._data.users[m.sender].uncommon
-    let rare = global.DATABASE._data.users[m.sender].rare
-    let epic = global.DATABASE._data.users[m.sender].epic
     let mythic = global.DATABASE._data.users[m.sender].mythic
     let legendary = global.DATABASE._data.users[m.sender].legendary
     let level = global.DATABASE._data.users[m.sender].level
@@ -34,8 +32,6 @@ let handler = async (m, { conn, usedPrefix }) => {
     let sortedpotion = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].potion - a[1].potion)
     let sortedsampah = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].sampah - a[1].sampah)
     let sortedcommon = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].common - a[1].common)
-    let sortedrare = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].rare - a[1].rare)
-    let sortedepic = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].epic - a[1].epic)
     let sorteduncommon = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].uncommon - a[1].uncommon)
     let sortedmythic = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].mythic - a[1].mythic)
     let sortedlegendary = Object.entries(global.DATABASE.data.users).sort((a, b) => b[1].legendary - a[1].legendary)
@@ -46,8 +42,6 @@ let handler = async (m, { conn, usedPrefix }) => {
     let userssampah = sortedsampah.map(v => v[0])
     let userslevel = sortedlevel.map(v => v[0])
     let userscommon = sortedcommon.map(v => v[0])
-    let usersrare = sortedrare.map(v => v[0])
-    let usersepic = sortedepic.map(v => v[0])
     let usersuncommon = sorteduncommon.map(v => v[0])
     let usersmythic = sortedmythic.map(v => v[0])
     let userslegendary = sortedlegendary.map(v => v[0])
@@ -67,8 +61,6 @@ Total inv: *${diamond + potion + sampah + makananpet}* item\n
 *Crate*
 Common: *${common}*
 Uncommon: *${uncommon}*
-Rare: *${rare}*
-Epic: *${epic}*
 Mythic: *${mythic}*
 Legendary: *${legendary}*
 Pet: *${pet}*\n
@@ -77,7 +69,7 @@ Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda ==
 Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*
 Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || kucing == 2 ? 'Level 2' : '' || kucing == 3 ? 'Level 3' : '' || kucing == 4 ? 'Level 4' : '' || kucing == 5 ? 'Level MAX' : ''}*
 Anjing: *${anjing == 0 ? 'Tidak Punya' : '' || anjing == 1 ? 'Level 1' : '' || anjing == 2 ? 'Level 2' : '' || anjing == 3 ? 'Level 3' : '' || anjing == 4 ? 'Level 4' : '' || anjing == 5 ? 'Level MAX' : ''}*\n\n
-*Proges*\n
+*Progres*\n
 ╭────────────────
 │Level *${level}* To Level *${level}*
 │Exp *${exp}* -> *${max}*
@@ -94,19 +86,17 @@ Anjing: *${anjing == 0 ? 'Tidak Punya' : '' || anjing == 1 ? 'Level 1' : '' || a
 ╭────────────────
 │Kuda ${kuda == 0 ? 'Tidak Punya' : '' || kuda > 0 && kuda < 5 ? `Level *${kuda}* To level *${kuda + 1}*\n│Exp *${_kuda}* -> *${kuda *100}*` : '' || kuda == 9 ? '*Max Level*' : ''}
 ╰────────────────\n\n
-*achievement*
+*Achievement*
 1.Top Level *${userslevel.indexOf(m.sender) + 1}* dari *${userslevel.length}*
 2.Top Koin *${userskoin.indexOf(m.sender) + 1}* dari *${userskoin.length}*
 3.Top Uang *${usersuang.indexOf(m.sender) + 1}* dari *${usersuang.length}*
 4.Top Diamond *${usersdiamond.indexOf(m.sender) + 1}* dari *${usersdiamond.length}*
-6.Top Potion *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
-7.Top Common *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
-8.Top Uncommon *${usersuncommon.indexOf(m.sender) + 1}* dari *${usersuncommon.length}*
-9.Top Rare *${usersrare.indexOf(m.sender) + 1}* dari *${usersrare.length}*
-10.Top Epic *${usersepic.indexOf(m.sender) + 1}* dari *${usersepic.length}*
-11.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
-12.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
-13.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
+5.Top Potion *${userspotion.indexOf(m.sender) + 1}* dari *${userspotion.length}*
+6.Top Common *${userscommon.indexOf(m.sender) + 1}* dari *${userscommon.length}*
+7.Top Uncommon *${usersuncommon.indexOf(m.sender) + 1}* dari *${usersuncommon.length}*
+8.Top Mythic *${usersmythic.indexOf(m.sender) + 1}* dari *${usersmythic.length}*
+9.Top Legendary *${userslegendary.indexOf(m.sender) + 1}* dari *${userslegendary.length}*
+10.Top Sampah *${userssampah.indexOf(m.sender) + 1}* dari *${userssampah.length}*
 \n${readMore}\n
 Warn: *${warn}*
 Banned: *No*
