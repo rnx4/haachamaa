@@ -35,8 +35,6 @@ Bonus: Rp${poin}
       }, timeout)
     ]
   }
-  handler.help = ['braintest']
-  handler.tags = ['game']
   handler.command = /^braintest/i
   handler.register = true
   handler.limit = true
