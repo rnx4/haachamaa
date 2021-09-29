@@ -6,7 +6,6 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
         let timers = clockString(_timers)
         if (global.DATABASE._data.users[m.sender].healt > 79) {
             if (new Date - global.DATABASE._data.users[m.sender].lastadventure > 300000) {
-            let armor = global.DATABASE._data.users[m.sender].armor
             let rubah = global.DATABASE._data.users[m.sender].rubah
             let anjing = global.DATABASE._data.users[m.sender].anjing
             let kuda = global.DATABASE._data.users[m.sender].kuda
@@ -14,7 +13,6 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let ____health = `${Math.floor(Math.random() * 101)}`.trim()
             let ___health = (____health * 1)
             let kucingnya = (kucing == 0? 0 : '' || kucing == 1 ? 5 : '' || kucing == 2 ? 10 : '' || kucing == 3 ? 15 : '' || kucing == 4 ? 21 : ''  || kucing == 5 ? 30 : '')
-            let armornya = (armor == 0 ? 0 : '' || armor == 1 ? 5 : '' || armor == 2 ? 10 : '' || armor == 3 ? 15 : '' || armor == 4 ? 21 : '' || armor == 5 ? 30 : '')
             let __health = (___health > 60 ? ___health - kucingnya - armornya : ___health)
             let healt = (kucing == 0 && armor == 0 ? pickRandom(['100', '99', '98', '97', '96', '95', '94', '93', '92', '91', '90']) : kucing > 0 && armor > 0 ? __health : ___health)
             let exp = (Math.floor(Math.random() * 400) + (kuda * 70))
@@ -28,10 +26,6 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let common = (_common * 1)
             let _uncommon = `${Math.floor(Math.random() * 2)}`.trim()
             let uncommon = (_uncommon * 1) 
-            let _rare = `${Math.floor(Math.random() * 3)}`.trim()
-            let rare = (_rare * 1)
-            let _epic = `${pickRandom(['1', '0', '0', '0',  '1', '0', '1'])}`
-            let epic = (_epic * 1)
             let _mythic = `${pickRandom(['1', '0', '0', '0', '0', '0', '0', '1'])}`
             let mythic = (_mythic * 1)
             let _legendary = `${pickRandom(['1', '0', '0', '0', '0', '0', '0', '0', '0'])}`
@@ -45,14 +39,6 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
 *sampah:* ${sampah}${potion == 0 ? '' : '\n*Potion:* ' + potion + ''}${diamond == 0 ? '' : '\n*diamond:* ' + diamond + ''}${common == 0 ? '' : '\n*common crate:* ' + common + ''}${uncommon == 0 ? '' : '\n*uncommon crate:* ' + uncommon + ''}
 `.trim()
             conn.reply(m.chat, str, m)
-            if (rare > 0) {
-                   global.DATABASE._data.users[m.sender].rare += rare * 1
-                   conn.reply(m.chat, '*Selamat anda mendapatkan item Langka yaitu*\n' + rare + ' Rare Crate', m)
-            }
-            if (epic > 0) {
-                   global.DATABASE._data.users[m.sender].epic += epic * 1
-                   conn.reply(m.chat, '*Selamat anda mendapatkan item Epik yaitu*\n' + epic + ' Epic Crate', m)
-            }
             if (mythic > 0) {
                    global.DATABASE._data.users[m.sender].mythic += mythic * 1
                    conn.reply(m.chat, '*Selamat anda mendapatkan item Mitik yaitu*\n' + mythic + ' Mythical Crate', m)
@@ -69,8 +55,6 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
             global.DATABASE._data.users[m.sender].diamond += diamond * 1
             global.DATABASE._data.users[m.sender].common += common * 1 
             global.DATABASE._data.users[m.sender].uncommon += uncommon * 1
-            global.DATABASE._data.users[m.sender].rare += rare * 1 
-            global.DATABASE._data.users[m.sender].epic += epic * 1 
             global.DATABASE._data.users[m.sender].sampah += sampah * 1
             global.DATABASE._data.users[m.sender].lastadventure = new Date * 1
             } else conn.reply(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`, m)
