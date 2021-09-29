@@ -7,10 +7,6 @@ const Bcommon = 200
 const Scommon = 20
 const Suncommon = 100
 const Buncommon = 600
-const Srare = 250
-const Brare = 750
-const Bepic = 1500
-const Sepic = 500
 const Bmythic = 4500
 const Smythic = 1500
 const Blegendary = 7500 
@@ -24,24 +20,20 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
     const Kchat = `
 ${usedPrefix}shop <Buy|sell> <item> <jumlah>\n
 Contoh penggunaan: *${usedPrefix}shop buy potion 1*\n\n
-List Barang:\n\n
+List Barang:\n
 *Barang   |  Harga beli*\n
 Potion:       ${potion}
 Diamond:     ${Bdiamond}
 Common:     ${Bcommon}
 Uncommon:  ${Buncommon}
-Rare:     ${Brare}
-Epic:     ${Bepic}
 Mythic:     ${Bmythic}
 Legendary: ${Blegendary}
-Sampah:     ${Bsampah}
+Sampah:     ${Bsampah}\n\n
 *Barang   | Harga Jual*\n
 Potion:       ${Spotion}
 Diamond:     ${Sdiamond}
 Common:     ${Scommon}
 Uncommon:  ${Suncommon}
-Rare:     ${Srare}
-Epic:     ${Sepic}
 Mythic:     ${Smythic}
 Legendary: ${Slegendary}
 Sampah:     ${Ssampah}\n\n
@@ -82,22 +74,6 @@ Sampah:     ${Ssampah}\n\n
                                 global.DATABASE._data.users[m.sender].koin -= Buncommon * count
                                 conn.reply(m.chat, `Succes membeli ${count} Uncommon crate dengan harga ${Buncommon * count} koin`, m)
                             } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${Buncommon * count} koin\n\nBuka crate dengan ketik: *${usedPrefix}open uncommon*`, m)
-                        
-                        break
-                    case 'rare':
-                            if (global.DATABASE._data.users[m.sender].koin >= Brare * count) {
-                                global.DATABASE._data.users[m.sender].rare += count * 1
-                                global.DATABASE._data.users[m.sender].koin -= Brare * count
-                                conn.reply(m.chat, `Succes membeli ${count} Rare crate dengan harga ${Brare * count} koin`, m)
-                            } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Rare crate dengan harga ${Brare * count} koin\n\nBuka crate dengan ketik: *${usedPrefix}open rare*`, m)
-                        
-                        break
-                    case 'epic':
-                            if (global.DATABASE._data.users[m.sender].koin >= Bepic * count) {
-                                global.DATABASE._data.users[m.sender].epic += count * 1
-                                global.DATABASE._data.users[m.sender].koin -= Bepic * count
-                                conn.reply(m.chat, `Succes membeli ${count} Epic crate dengan harga ${Bepic * count} koin`, m)
-                            } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Epic crate dengan harga ${Bepic * count} koin\n\nBuka crate dengan ketik: *${usedPrefix}open epic*`, m)
                         
                         break
                     case 'mythic':
@@ -150,20 +126,6 @@ Sampah:     ${Ssampah}\n\n
                             global.DATABASE._data.users[m.sender].uncommon -= count * 1
                             conn.reply(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${Suncommon * count} koin`.trim(), m)
                         } else conn.reply(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'rare':
-                        if (global.DATABASE._data.users[m.sender].rare >= count * 1) {
-                            global.DATABASE._data.users[m.sender].koin += Srare * count
-                            global.DATABASE._data.users[m.sender].rare -= count * 1
-                            conn.reply(m.chat, `Succes menjual ${count} Rare Crate dengan harga ${Srare * count} koin`.trim(), m)
-                        } else conn.reply(m.chat, `Rare Crate kamu tidak cukup`.trim(), m)
-                        break
-                    case 'epic':
-                        if (global.DATABASE._data.users[m.sender].epic >= count * 1) {
-                            global.DATABASE._data.users[m.sender].koin += Sepic * count
-                            global.DATABASE._data.users[m.sender].epic -= count * 1
-                            conn.reply(m.chat, `Succes menjual ${count} Epic Crate dengan harga ${Sepic * count} koin`.trim(), m)
-                        } else conn.reply(m.chat, `Epic Crate kamu tidak cukup`.trim(), m)
                         break
                     case 'mythic':
                         if (global.DATABASE._data.users[m.sender].mythic >= count * 1) {
@@ -235,22 +197,6 @@ Sampah:     ${Ssampah}\n\n
                         } else conn.reply(m.chat, `Uang anda tidak cukup untuk membeli ${count} Uncommon crate dengan harga ${Buncommon * count} money\n\nBuka crate dengan ketik: *${usedPrefix}open uncommon*`, m)
                    
                     break
-                case 'rare':
-                        if (global.DATABASE._data.users[m.sender].koin >= Brare * count) {
-                            global.DATABASE._data.users[m.sender].rare += count * 1
-                            global.DATABASE._data.users[m.sender].koin -= Brare * count
-                            conn.reply(m.chat, `Succes membeli ${count} Rare crate dengan harga ${Brare * count} koin`, m)
-                        } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Rare crate dengan harga ${Brare * count} koin\n\nBuka crate dengan ketik: *${usedPrefix}open rare*`, m)
-                    
-                    break
-                case 'epic':
-                        if (global.DATABASE._data.users[m.sender].koin >= Bepic * count) {
-                            global.DATABASE._data.users[m.sender].epic += count * 1
-                            global.DATABASE._data.users[m.sender].koin -= Bepic * count
-                            conn.reply(m.chat, `Succes membeli ${count} Epic crate dengan harga ${Bepic * count} koin`, m)
-                        } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Epic crate dengan harga ${Bepic * count} koin\n\nBuka crate dengan ketik: *${usedPrefix}open epic*`, m)
-                    
-                    break
                 case 'mythic':
                         if (global.DATABASE._data.users[m.sender].koin >= Bmythic * count) {
                             global.DATABASE._data.users[m.sender].mythic += count * 1
@@ -301,20 +247,6 @@ Sampah:     ${Ssampah}\n\n
                         global.DATABASE._data.users[m.sender].uncommon -= count * 1
                         conn.reply(m.chat, `Succes menjual ${count} Uncommon Crate dengan harga ${Suncommon * count} koin`.trim(), m)
                     } else conn.reply(m.chat, `Uncommon Crate kamu tidak cukup`.trim(), m)
-                    break
-                case 'rare':
-                    if (global.DATABASE._data.users[m.sender].rare >= count * 1) {
-                        global.DATABASE._data.users[m.sender].koin += Srare * count
-                        global.DATABASE._data.users[m.sender].rare -= count * 1
-                        conn.reply(m.chat, `Succes menjual ${count} Rare Crate dengan harga ${Srare * count} koin`.trim(), m)
-                    } else conn.reply(m.chat, `Rare Crate kamu tidak cukup`.trim(), m)
-                    break
-                case 'epic':
-                    if (global.DATABASE._data.users[m.sender].epic >= count * 1) {
-                        global.DATABASE._data.users[m.sender].koin += Sepic * count
-                        global.DATABASE._data.users[m.sender].epic -= count * 1
-                        conn.reply(m.chat, `Succes menjual ${count} Epic Crate dengan harga ${Sepic * count} koin`.trim(), m)
-                    } else conn.reply(m.chat, `Epic Crate kamu tidak cukup`.trim(), m)
                     break
                 case 'mythic':
                     if (global.DATABASE._data.users[m.sender].mythic >= count * 1) {
