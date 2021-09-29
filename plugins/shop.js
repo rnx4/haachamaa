@@ -18,8 +18,6 @@ const Slegendary = 3000
 const Bsampah = 10
 const Ssampah = 2
 let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
-    const _armor = global.DATABASE._data.users[m.sender].armor
-    const armor = (_armor == 0 ? 20000 : '' || _armor == 1 ? 49999 : '' || _armor == 2 ? 99999 : '' || _armor == 3 ? 149999 : '' || _armor == 4 ? 299999 : '')
     let type = (args[0] || '').toLowerCase()
     let _type = (args[1] || '').toLowerCase()
     let jualbeli = (args[0] || '').toLowerCase()
@@ -37,7 +35,6 @@ Epic:     ${Bepic}
 Mythic:     ${Bmythic}
 Legendary: ${Blegendary}
 Sampah:     ${Bsampah}
-Armor:       ${armor}\n\n
 *Barang   | Harga Jual*\n
 Potion:       ${Spotion}
 Diamond:     ${Sdiamond}
@@ -125,15 +122,6 @@ Sampah:     ${Ssampah}\n\n
                                 global.DATABASE._data.users[m.sender].koin -= Bsampah * count
                                 conn.reply(m.chat, `Succes membeli ${count} Sampah dengan harga ${Bsampah * count} koin`, m)
                             } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Sampah dengan harga ${Bsampah * count} koin`.trim(), m)
-                        
-                        break
-                    case 'armor':
-                            if (global.DATABASE._data.users[m.sender].armor == 5) return conn.reply(m.chat, 'Armormu sudah *Level Max*', m)
-                            if (global.DATABASE._data.users[m.sender].koin > armor) {
-                                global.DATABASE._data.users[m.sender].armor += 1
-                                global.DATABASE._data.users[m.sender].koin -= armor * 1
-                                conn.reply(m.chat, `Succes membeli armor seharga ${armor} koin` ,m)
-                            } else conn.reply(m.chat, `Koin mu tidak cukup untuk membeli armor seharga ${armor} koin`, m)
                         
                         break
                     default:
@@ -285,16 +273,6 @@ Sampah:     ${Ssampah}\n\n
                             global.DATABASE._data.users[m.sender].koin -= Bsampah * count
                             conn.reply(m.chat, `Succes membeli ${count} Sampah dengan harga ${Bsampah * count} koin`, m)
                         } else conn.reply(m.chat, `Koin anda tidak cukup untuk membeli ${count} Sampah dengan harga ${Bsampah * count} koin`.trim(), m)
-                    
-                    break
-                case 'armor':
-                        if (global.DATABASE._data.users[m.sender].armor == 5) return conn.reply(m.chat, 'Armormu sudah *Level Max*', m)
-                        if (global.DATABASE._data.users[m.sender].koin > armor * 1) {
-                            global.DATABASE._data.users[m.sender].armor += 1
-                            global.DATABASE._data.users[m.sender].koin -= armor * 1
-                            conn.reply(m.chat, `Succes membeli armor seharga ${armor} koin` ,m)
-                          
-                        } else conn.reply(m.chat, `Koin mu tidak cukup untuk membeli armor seharga ${armor} koin`, m)
                     
                     break
                 default:
