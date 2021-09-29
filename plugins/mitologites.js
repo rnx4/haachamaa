@@ -24,7 +24,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 ${json.soal}
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik *${usedPrefix}mthint* untuk bantuan
 Bonus: Rp${poin}
 `.trim()
   conn.mitologi[id] = [
