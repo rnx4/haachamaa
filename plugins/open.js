@@ -222,7 +222,6 @@ Anda telah membuka *Uncommon crate* dan mendapatkan:${uk3 > 0 ? `\nKoin: ${uk3}`
                     let _rp = `${Math.floor(Math.random() * 3)}`.trim()
                     let _ru = `${Math.floor(Math.random() * 3)}`.trim()
                     let _rc = `${Math.floor(Math.random() * 3)}`.trim()
-                    let rz = (_rz * 1)
                     let re = (_re * 1)
                     let rk = (_rk * 1)
                     let rp = (_rp * 1)
