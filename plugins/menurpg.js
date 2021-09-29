@@ -11,6 +11,7 @@ let teks = `
 │ 》》 _.feed_  [ pet ]
 │ 》》 _.inv_
 │ 》》 _.inventory_
+│ 》》 _.open_  [ crate ]
 │ 》》 _.perlengkapan_
 │ 》》 _.shop_  [ buy/sell  item ]
 │ 》》 _.toko_  [ buy/sell  item ]
