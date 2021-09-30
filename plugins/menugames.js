@@ -15,6 +15,7 @@ let teks = `
 ┃ ❖ _.family100_  Ⓛ
 ┃ ❖ _.iqtest_  Ⓛ
 ┃ ❖ _.math_  [ mode ] Ⓛ
+┃ ❖ _.mitologites_  Ⓛ
 ┃ ❖ _.siapakahaku_  Ⓛ
 ┃ ❖ _.slot_  [ jumlah uang ] Ⓛ
 ┃ ❖ _.suit_  
@@ -25,11 +26,9 @@ let teks = `
 ┃ ❖ _.tebakkata_  Ⓛ
 ┃ ❖ _.tebakkimia_  Ⓛ
 ┃ ❖ _.tebakkota_  Ⓛ
-┃ ❖ _.tebaklagu_  Ⓛ
 ┃ ❖ _.tebaklirik_ Ⓛ
 ┃ ❖ _.tebaktebakan_  Ⓛ
 ┃ ❖ _.tekateki_  Ⓛ
-┃ ❖ _.tesmitologi_  Ⓛ
 ┃ ❖ _.tesotak_  Ⓛ
 ┃ ❖ _.tictactoe_  [ custom room name ] Ⓛ
 ┃ ❖ _.ttt_  [ custom room name ] Ⓛ
