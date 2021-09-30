@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ╭── *〘 Sticker Expression 〙*
@@ -6,34 +6,35 @@ let teks = `
 ┊      Ⓛ  = limit
 ┊
 ┊
-┊ ⍚ _.awoo_  Ⓛ
-┊ ⍚ _.blush_  Ⓛ
-┊ ⍚ _.bonk_  [ @user ] Ⓛ
-┊ ⍚ _.bums_  Ⓛ
-┊ ⍚ _.cringe_  Ⓛ
-┊ ⍚ _.cry_  Ⓛ
-┊ ⍚ _.cuddle_  Ⓛ
-┊ ⍚ _.facepalm_  Ⓛ
-┊ ⍚ _.glomp_  Ⓛ
-┊ ⍚ _.happy_  Ⓛ
-┊ ⍚ _.highfive_  Ⓛ
-┊ ⍚ _.hug_  Ⓛ
-┊ ⍚ _.kick_  Ⓛ
-┊ ⍚ _.kiss_  Ⓛ
-┊ ⍚ _.kitsune_  Ⓛ
-┊ ⍚ _.nom_  Ⓛ
-┊ ⍚ _.notstonk_  Ⓛ
-┊ ⍚ _.nyan_  Ⓛ
-┊ ⍚ _.pat_  Ⓛ
-┊ ⍚ _.poke_  Ⓛ
-┊ ⍚ _.punch_  Ⓛ
-┊ ⍚ _.slap_  Ⓛ
-┊ ⍚ _.smile_  Ⓛ
-┊ ⍚ _.smug_  Ⓛ
-┊ ⍚ _.stonk_  Ⓛ
-┊ ⍚ _.wave_  Ⓛ
-┊ ⍚ _.wink_  Ⓛ
-┊ ⍚ _.yeet_  Ⓛ
+┊ ⍚ _${usedPrefix}blush_  Ⓛ
+┊ ⍚ _${usedPrefix}bonk_  [ @user ] Ⓛ
+┊ ⍚ _${usedPrefix}bums_  Ⓛ
+┊ ⍚ _${usedPrefix}cringe_  Ⓛ
+┊ ⍚ _${usedPrefix}cry_  Ⓛ
+┊ ⍚ _${usedPrefix}cuddle_  Ⓛ
+┊ ⍚ _${usedPrefix}facepalm_  Ⓛ
+┊ ⍚ _${usedPrefix}glomp_  Ⓛ
+┊ ⍚ _${usedPrefix}happy_  Ⓛ
+┊ ⍚ _${usedPrefix}highfive_  Ⓛ
+┊ ⍚ _${usedPrefix}hug_  Ⓛ
+┊ ⍚ _${usedPrefix}kill_  Ⓛ
+┊ ⍚ _${usedPrefix}kiss_  Ⓛ
+┊ ⍚ _${usedPrefix}kitsune_  Ⓛ
+┊ ⍚ _${usedPrefix}notstonk_  Ⓛ
+┊ ⍚ _${usedPrefix}nyan_  Ⓛ
+┊ ⍚ _${usedPrefix}nyam_  Ⓛ
+┊ ⍚ _${usedPrefix}pat_  Ⓛ
+┊ ⍚ _${usedPrefix}poke_  Ⓛ
+┊ ⍚ _${usedPrefix}punch_  Ⓛ
+┊ ⍚ _${usedPrefix}slap_  Ⓛ
+┊ ⍚ _${usedPrefix}slebew_  Ⓛ
+┊ ⍚ _${usedPrefix}smile_  Ⓛ
+┊ ⍚ _${usedPrefix}smug_  Ⓛ
+┊ ⍚ _${usedPrefix}stonk_  Ⓛ
+┊ ⍚ _${usedPrefix}wave_  Ⓛ
+┊ ⍚ _${usedPrefix}wink_  Ⓛ
+┊ ⍚ _${usedPrefix}wuii  Ⓛ
+┊ ⍚ _${usedPrefix}yeey_  Ⓛ
 ╰────────
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Sticker Wibu', 'status@broadcast')
