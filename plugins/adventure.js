@@ -13,8 +13,8 @@ let handler = async (m, { conn, usedPrefix, DevMode }) => {
             let ____health = `${Math.floor(Math.random() * 101)}`.trim()
             let ___health = (____health * 1)
             let kucingnya = (kucing == 0? 0 : '' || kucing == 1 ? 5 : '' || kucing == 2 ? 10 : '' || kucing == 3 ? 15 : '' || kucing == 4 ? 21 : ''  || kucing == 5 ? 30 : '')
-            let __health = (___health > 60 ? ___health - kucingnya - armornya : ___health)
-            let healt = (kucing == 0 && armor == 0 ? pickRandom(['100', '99', '98', '97', '96', '95', '94', '93', '92', '91', '90']) : kucing > 0 && armor > 0 ? __health : ___health)
+            let __health = (___health > 60 ? ___health - kucingnya)
+            let healt = (kucing == 0 pickRandom(['100', '99', '98', '97', '96', '95', '94', '93', '92', '91', '90']) : kucing > 0 ? : ___health)
             let exp = (Math.floor(Math.random() * 400) + (kuda * 70))
             let uang = `${Math.floor(Math.random() * 250)}`.trim() 
             let koin = `${Math.floor(Math.random() * 250)}`.trim() 
@@ -58,7 +58,7 @@ Nyawa mu berkurang -${healt * 1} karena Kamu telah berpetualang sampai ${pickRan
             global.DATABASE._data.users[m.sender].sampah += sampah * 1
             global.DATABASE._data.users[m.sender].lastadventure = new Date * 1
             } else conn.reply(m.chat, `Anda sudah berpetualang dan kelelahan, silahkan coba *${timers}* lagi`, m)
-        } else conn.reply(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>*\ndan ketik *' + usedPrefix + 'use potion <jumlah>*, m)
+        } else conn.reply(m.chat, 'Minimal 80 health untuk bisa berpetualang, beli nyawa dulu dengan ketik *' + usedPrefix + 'shop buy potion <jumlah>'*, m)
     } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)
