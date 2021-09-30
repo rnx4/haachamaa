@@ -9,7 +9,8 @@ let cita = arr[Math.floor(Math.random() * arr.length)]
 conn.sendFile(m.chat, cita, '.png', '*©ChamaaChamaa*', m) 
 }
 
-
+handler.help = ['wphd']
+handler.tags = ['PUNYA MASTER']
 handler.command = /^wphd$/i
 handler.limit = false
 handler.owner = true
