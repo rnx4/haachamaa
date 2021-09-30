@@ -1,19 +1,19 @@
 let handler = async (m, { conn }) => {
-  let LastClaim = global.DATABASE._data.users[m.sender].lastclaim
-let cdj = `${JaM(new Date - LastClaim)}`
-let cdm = `${MeNit(new Date - LastClaim)}`
-let cds = `${DeTik(new Date - LastClaim)}`
+  let LastDaily = global.DATABASE._data.users[m.sender].lastdaily
+let cdj = `${JaM(new Date - LastDaily)}`
+let cdm = `${MeNit(new Date - LastDaily)}`
+let cds = `${DeTik(new Date - LastDaily)}`
 let cd1 = Math.ceil(23 - cdj)
 let cd2 = Math.ceil(59 - cdm)
 let cd3 = Math.ceil(60 - cds)
-  if (new Date - global.DATABASE._data.users[m.sender].lastclaim > 86400000) {
-    global.DATABASE._data.users[m.sender].uang += 10000
-    global.DATABASE._data.users[m.sender].exp += 100
-    m.reply('Selamat anda mendapatkan +Rp10000')
-    global.DATABASE._data.users[m.sender].lastclaim = new Date * 1
+  if (new Date - global.DATABASE._data.users[m.sender].lastdaily > 86400000) {
+    global.DATABASE._data.users[m.sender].koin += 2500
+    global.DATABASE._data.users[m.sender].potion += 1
+    m.reply('Selamat anda mendapatkan 2500 koin dan 1 potion')
+    global.DATABASE._data.users[m.sender].lastdaily = new Date * 1
   } else throw `Anda sudah mengklaim harian hari ini.\n\nTunggu ${cd1} Jam ${cd2} Menit ${cd3} Detik!`
 }
-handler.command = /^(daily|claim)$/i
+handler.command = /^(daily)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
