@@ -123,5 +123,5 @@ conn.logger.level = 'debug'
 
 [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming) | [![unx](https://github.com/unx21.png?size=100)](https://github.com/unx21) |
 ----|----|----|
-[Nurutomo](https://github.com/Nurutomo) | [U n x](https://github.com/unx21) |
+[Nurutomo](https://github.com/Nurutomo) | [BochilGaming](https://github.com/BochilGaming) | [U n x](https://github.com/unx21) |
 Original Creator | RPG Creator | Haachamaa Simp |
