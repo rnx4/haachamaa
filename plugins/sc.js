@@ -5,7 +5,7 @@ let teks = `
 ╭─ *「 Haachamaa 」*
 │
 │ • *Link:* https://github.com/Nurutomo/wabot-aq
-│ • *Link:* https://github.com/unx21/hachama
+│ • *Link:* https://github.com/unx21/haachamaa
 │
 │
 │    _Haachamaa Heree_
