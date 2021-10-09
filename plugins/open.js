@@ -125,7 +125,7 @@ Anda telah membuka *Common crate* dan mendapatkan:${ck3 > 0 ? `\nKoin: ${ck3}` :
                     let uu = (_uu * 1)
                     let uc = (_uc * 1)
                     let Hun = `
-Anda telah membuka *Uncommon crate* dan mendapatkan:${um > 0 ? `\nKoin: ${um}` : ''}${ue > 0 ? `\nExp: ${ue} *exp*` : ''}${up > 0 ? `\nPotion: ${up} *potion*` : ''}${uc > 0 ? `\nCommon crate: ${uc} *crate*` : ''}${uu > 0 ? `\nUncommon crate: ${uu} *crate*` : ''}
+Anda telah membuka *Uncommon crate* dan mendapatkan:${uk > 0 ? `\nKoin: ${uk}` : ''}${ue > 0 ? `\nExp: ${ue} *exp*` : ''}${up > 0 ? `\nPotion: ${up} *potion*` : ''}${uc > 0 ? `\nCommon crate: ${uc} *crate*` : ''}${uu > 0 ? `\nUncommon crate: ${uu} *crate*` : ''}
 `.trim()
                     if (global.DATABASE._data.users[m.sender].uncommon >= 1) {
                         global.DATABASE._data.users[m.sender].uncommon -= 1
