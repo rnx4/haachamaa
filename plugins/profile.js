@@ -11,7 +11,7 @@ let handler = async (m, { conn, isPrems }) => {
   } finally {
     let premium = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(who)
     let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
-    let { name, uang, limit, exp, lastclaim, registered, regTime, age, level, role } = global.DATABASE.data.users[who]
+    let { name, uang, koin, limit, exp, lastclaim, registered, regTime, age, level, role } = global.DATABASE.data.users[who]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let username = conn.getName(who)
     let sn = createHash('md5').update(who).digest('hex')
@@ -19,14 +19,14 @@ let handler = async (m, { conn, isPrems }) => {
 *Name:* ${username} ${registered ? '(' + name + ') ': ''}(@${who.replace(/@.+/, '')})${about ? '\n*About:* ' + about : ''}
 *Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 *Link:* https://wa.me/${who.split`@`[0]}${registered ? '\n*Age:* ' + age : ''}
-*XP:* TOTAL ${exp}
 *Saldo:* Rp${uang}
+*Koin:* ${koin}
 *Limit:* ${limit}
 *Premium:* ${premium ? 'YES':'NO'}
-*Level:* ${level}
-*Rank:* ${role}
 *Registered:* ${registered ? 'Yes (' + new Date(regTime) + ')': 'No'}${lastclaim > 0 ? '\n*Last Claim:* ' + new Date(lastclaim) : ''}
 *SN:* ${sn}
+
+_Ketik .rank untuk mengecek kebutuhan ranking mu_
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, pp, 'pp.jpg', str, m, false, { contextInfo: { mentionedJid }})
@@ -35,4 +35,3 @@ let handler = async (m, { conn, isPrems }) => {
 handler.command = /^profile?$/i
 handler.register = true
 module.exports = handler
-
