@@ -10,13 +10,9 @@ const defaultMenu = {
 ┊
 ║ ┅ ๑————————————๑
 ║┊
-║┊   _*⌲ Haachamaa-Bot Menu!*_
+║┊   _*⌲ OWNER NYA NGESIMP 赤井はあと*_
 ║┊
 ║┊ ⌬ *Name:* %name
-║┊ ⌬ *Level:* %level
-║┊ ⌬ *EXP:* %totalexp XP
-║┊ ⌬ *Saldo:* Rp%saldo
-║┊ ⌬ *Limit:* %limit
 ║┊
 ║┊ ⌬ *Hari:* %week %weton
 ║┊ ⌬ *Tanggal:* %date
@@ -34,14 +30,9 @@ const defaultMenu = {
 ║ ┅ ๑————————————๑
 ║┊
 ║┊ ⍚ _Nurutomo_
-║┊ ⍚ _Ariffb_
-║┊ ⍚ _Ftwrr_
-║┊ ⍚ _DrawlNag_
-║┊ ⍚ _St4rz_
-║┊ ⍚ _RC047_
 ║┊ ⍚ _BochilGaming_
+║┊ ⍚ _Ciel_
 ║┊ ⍚ _Kokoronationz_
-║┊ ⍚ _Jauhari_
 ║┊ ⍚ _Unx21_
 ║┊ ⍚ _Dan Kawan-kawan_
 ╰═ ┅ ═══════
@@ -164,7 +155,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       message: { 
         "imageMessage": { 
           "mimetype": "image/jpeg", 
-          "caption": `${conn.user.name} Bukan Bot Ajg`, 
+          "caption": `${conn.user.name} SIMP NYA OWNER`, 
           "jpegThumbnail": tnbot
         } 
       }
