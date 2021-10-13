@@ -2,7 +2,7 @@
 
 ## Uwuwuwwlulululuuuu
 
-![Arrghhh](https://user-images.githubusercontent.com/84166927/134810796-be992262-6a08-452e-907f-60bbdbb0d99e.png)
+![AkaiHaato](https://user-images.githubusercontent.com/84166927/137114860-c6ddb91f-5268-4211-b41d-d423d336663d.png)
 
 
 #### Join Heree Bruhh
@@ -22,6 +22,9 @@
 
 Original [`wabot-aq`](https://GitHub.com/Nurutomo/wabot-aq)
 
+RPG Source [`games-wabot`](https://GitHub.com/BochilGaming/games-wabot)
+
+My Sister [`Violet`](https://GitHub.com/unx21/violet)
 
 ### Prefix
 .  #  +  ×  ÷  /  !  %  &  -  : (default)
