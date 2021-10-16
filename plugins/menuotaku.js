@@ -7,29 +7,29 @@ let teks = `
 │      Ⓟ  = Fitur premium
 │
 │
-├ ♡ _.anime_  [ judul ] Ⓛ
-├ ♡ _.anime_  [ waifu, husbu, loli ] Ⓛ
-├ ♡ _.animelink_  Ⓛ
-├ ♡ _.bacakomik_  [ judul ] Ⓛ
-├ ♡ _.anmovie_  Ⓛ
-├ ♡ _.aot_  Ⓛ
-├ ♡ _.chara_  [ nama ] Ⓛ
-├ ♡ _.dark_  Ⓛ
-├ ♡ _.fate_  Ⓛ
-├ ♡ _.healer_  Ⓟ
-├ ♡ _.husbu_  Ⓛ
-├ ♡ _.kanji_  Ⓛ
-├ ♡ _.kodenuklir_  Ⓛ
-├ ♡ _.kusonime_  [ judul ] Ⓛ
-├ ♡ _.mangainfo_  [ judul ] Ⓛ
-├ ♡ _.mangalink_  Ⓛ
-├ ♡ _.overf_  Ⓟ
-├ ♡ _.ovlord_  Ⓛ
-├ ♡ _.nekonime_  Ⓛ
-├ ♡ _.snsou_  [ food war ] Ⓛ
-├ ♡ _.tensura_  Ⓛ
-├ ♡ _.waifu_  Ⓛ
-├ ♡ _.wpanime_  Ⓛ
+├ ♡ _${usedPrefix}anime_  [ judul ] Ⓛ
+├ ♡ _${usedPrefix}anime_  [ waifu, husbu, loli ] Ⓛ
+├ ♡ _${usedPrefix}animelink_  Ⓛ
+├ ♡ _${usedPrefix}bacakomik_  [ judul ] Ⓛ
+├ ♡ _${usedPrefix}anmovie_  Ⓛ
+├ ♡ _${usedPrefix}aot_  Ⓛ
+├ ♡ _${usedPrefix}chara_  [ nama ] Ⓛ
+├ ♡ _${usedPrefix}dark_  Ⓛ
+├ ♡ _${usedPrefix}fate_  Ⓛ
+├ ♡ _${usedPrefix}healer_  Ⓟ
+├ ♡ _${usedPrefix}husbu_  Ⓛ
+├ ♡ _${usedPrefix}kanji_  Ⓛ
+├ ♡ _${usedPrefix}kodenuklir_  Ⓛ
+├ ♡ _${usedPrefix}kusonime_  [ judul ] Ⓛ
+├ ♡ _${usedPrefix}mangainfo_  [ judul ] Ⓛ
+├ ♡ _${usedPrefix}mangalink_  Ⓛ
+├ ♡ _${usedPrefix}overf_  Ⓟ
+├ ♡ _${usedPrefix}ovlord_  Ⓛ
+├ ♡ _${usedPrefix}nekonime_  Ⓛ
+├ ♡ _${usedPrefix}snsou_  [ food war ] Ⓛ
+├ ♡ _${usedPrefix}tensura_  Ⓛ
+├ ♡ _${usedPrefix}waifu_  Ⓛ
+├ ♡ _${usedPrefix}wpanime_  Ⓛ
 └──────────
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Cara Menjadi Wibu Elit', 'status@broadcast')
