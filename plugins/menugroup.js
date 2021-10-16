@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ╭── *〘 Menu Grup 〙*
@@ -6,29 +6,29 @@ let teks = `
 │     Ⓐ  = Only admin
 │
 │
-│ ➥ _.absen_
-│ ➥ _.cekabsen_
-│ ➥ _.hapusabsen_  Ⓐ
-│ ➥ _.mulaiabsen_  [ teks ] Ⓐ
-│ ➥ _.enable_  [ option ] Ⓐ
-│ ➥ _.disable_  [ option ] Ⓐ
-│ ➥ _.group_  [ close ] Ⓐ
-│ ➥ _.group_  [ open ] Ⓐ
-│ ➥ _.groupinfo_
-│ ➥ _.htag_  [ jumlah  pesan ] Ⓐ
-│ ➥ _.linkgroup_
-│ ➥ _.listonline_
-│ ➥ _.here_
-│ ➥ _.pengumuman_  [ teks ] Ⓐ
-│ ➥ _.announce_  [ teks ] Ⓐ
-│ ➥ _.hidetag_  [ teks ] Ⓐ
-│ ➥ _.revoke_  Ⓐ
-│ ➥ _.setbye_  [ teks ] Ⓐ
-│ ➥ _.setwelcome_  [ teks ] Ⓐ
-│ ➥ _.simulate_  [ event  @mention ]
-│ ➥ _.tagall_  Ⓐ
-│ ➥ _.totalpesan_
-│ ➥ _.warn_  Ⓐ
+│ ➥ _${usedPrefix}absen_
+│ ➥ _${usedPrefix}cekabsen_
+│ ➥ _${usedPrefix}hapusabsen_  Ⓐ
+│ ➥ _${usedPrefix}mulaiabsen_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}enable_  [ option ] Ⓐ
+│ ➥ _${usedPrefix}disable_  [ option ] Ⓐ
+│ ➥ _${usedPrefix}group_  [ close ] Ⓐ
+│ ➥ _${usedPrefix}group_  [ open ] Ⓐ
+│ ➥ _${usedPrefix}groupinfo_
+│ ➥ _${usedPrefix}htag_  [ jumlah  pesan ] Ⓐ
+│ ➥ _${usedPrefix}linkgroup_
+│ ➥ _${usedPrefix}listonline_
+│ ➥ _${usedPrefix}here_
+│ ➥ _${usedPrefix}pengumuman_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}announce_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}hidetag_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}revoke_  Ⓐ
+│ ➥ _${usedPrefix}setbye_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}setwelcome_  [ teks ] Ⓐ
+│ ➥ _${usedPrefix}simulate_  [ event  @mention ]
+│ ➥ _${usedPrefix}tagall_  Ⓐ
+│ ➥ _${usedPrefix}totalpesan_
+│ ➥ _${usedPrefix}warn_  Ⓐ
 ╰─────────
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Khusus Grup', 'status@broadcast')
