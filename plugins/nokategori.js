@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ╭═══ *〘 Tanpa Kategori 〙*
@@ -8,20 +8,20 @@ let teks = `
 ║     Ⓛ  = limit
 ┊
 ║
-┊ × _.owner_
-║ + _.creator_
-┊ ÷ _.del_
-║ = _.delete_
-┊ / _.donasi_
-║ ! _.grouplist_
-┊ # _.bannedlist_
-║ $ _.bug_  [ laporan ]
-┊ % _.report_  [ laporan ]
-║ : _.rules_
-┊ & _.readmore_  [ teks|teks ] Ⓛ
-║ \ _.spoiler_  [ teks|teks ] Ⓛ
-┊ - _.repeat_  [ teks ] Ⓛ
-║ > _.premium_
+┊ × _${usedPrefix}owner_
+║ + _${usedPrefix}creator_
+┊ ÷ _${usedPrefix}del_
+║ = _${usedPrefix}delete_
+┊ / _${usedPrefix}donasi_
+║ ! _${usedPrefix}grouplist_
+┊ # _${usedPrefix}bannedlist_
+║ $ _${usedPrefix}bug_  [ laporan ]
+┊ % _${usedPrefix}report_  [ laporan ]
+║ : _${usedPrefix}rules_
+┊ & _${usedPrefix}readmore_  [ teks|teks ] Ⓛ
+║ \ _${usedPrefix}spoiler_  [ teks|teks ] Ⓛ
+┊ - _${usedPrefix}repeat_  [ teks ] Ⓛ
+║ > _${usedPrefix}premium_
 ╰═ ┅ ═══════
 `.trim()
     conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Tanpa Kategori', 'status@broadcast')
