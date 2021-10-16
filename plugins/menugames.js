@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ┏━ *「 Game List 」*
@@ -6,34 +6,34 @@ let teks = `
 ┃
 ┃    Ⓛ   = limit
 ┃
-┃ ❖ _.asahotak_  Ⓛ
-┃ ❖ _.braintest_  Ⓛ
-┃ ❖ _.caklontong_  Ⓛ
-┃ ❖ _.dadu_
-┃ ❖ _.dare_
-┃ ❖ _.delsesittt_  Ⓛ
-┃ ❖ _.family100_  Ⓛ
-┃ ❖ _.iqtest_  Ⓛ
-┃ ❖ _.math_  [ mode ] Ⓛ
-┃ ❖ _.mitologites_  Ⓛ
-┃ ❖ _.siapakahaku_  Ⓛ
-┃ ❖ _.slot_  [ jumlah uang ] Ⓛ
-┃ ❖ _.suit_  
-┃ ❖ _.susunkata_  Ⓛ
-┃ ❖ _.tebakanime_  Ⓛ
-┃ ❖ _.tebakbendera_  Ⓛ
-┃ ❖ _.tebakgambar_  Ⓛ
-┃ ❖ _.tebakkata_  Ⓛ
-┃ ❖ _.tebakkimia_  Ⓛ
-┃ ❖ _.tebakkota_  Ⓛ
-┃ ❖ _.tebaklirik_ Ⓛ
-┃ ❖ _.tebaktebakan_  Ⓛ
-┃ ❖ _.tekateki_  Ⓛ
-┃ ❖ _.tesotak_  Ⓛ
-┃ ❖ _.tictactoe_  [ custom room name ] Ⓛ
-┃ ❖ _.ttt_  [ custom room name ] Ⓛ
-┃ ❖ _.truth_
-┃ ❖ _.wordorder_  Ⓛ
+┃ ❖ _${usedPrefix}asahotak_  Ⓛ
+┃ ❖ _${usedPrefix}braintest_  Ⓛ
+┃ ❖ _${usedPrefix}caklontong_  Ⓛ
+┃ ❖ _${usedPrefix}dadu_
+┃ ❖ _${usedPrefix}dare_
+┃ ❖ _${usedPrefix}delsesittt_  Ⓛ
+┃ ❖ _${usedPrefix}family100_  Ⓛ
+┃ ❖ _${usedPrefix}iqtest_
+┃ ❖ _${usedPrefix}math_  [ mode ] Ⓛ
+┃ ❖ _${usedPrefix}mitologites_  Ⓛ
+┃ ❖ _${usedPrefix}siapakahaku_  Ⓛ
+┃ ❖ _${usedPrefix}slot_  [ jumlah uang ] Ⓛ
+┃ ❖ _${usedPrefix}suit_  
+┃ ❖ _${usedPrefix}susunkata_  Ⓛ
+┃ ❖ _${usedPrefix}tebakanime_  Ⓛ
+┃ ❖ _${usedPrefix}tebakbendera_  Ⓛ
+┃ ❖ _${usedPrefix}tebakchara_  Ⓛ
+┃ ❖ _${usedPrefix}tebakgambar_  Ⓛ
+┃ ❖ _${usedPrefix}tebakkata_  Ⓛ
+┃ ❖ _${usedPrefix}tebakkimia_  Ⓛ
+┃ ❖ _${usedPrefix}tebaklirik_ Ⓛ
+┃ ❖ _${usedPrefix}tebaktebakan_  Ⓛ
+┃ ❖ _${usedPrefix}tekateki_  Ⓛ
+┃ ❖ _${usedPrefix}tesotak_  Ⓛ
+┃ ❖ _${usedPrefix}tictactoe_  [ custom room name ] Ⓛ
+┃ ❖ _${usedPrefix}ttt_  [ custom room name ] Ⓛ
+┃ ❖ _${usedPrefix}truth_
+┃ ❖ _${usedPrefix}wordorder_  Ⓛ
 ┗ ┅ ━━━━━━━━━━
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Games Menu', 'status@broadcast')
