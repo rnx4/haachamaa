@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ┏━ *「 Maker and Sticker 」*
@@ -7,35 +7,35 @@ let teks = `
 ┃    Ⓛ  = limit
 ┃    Ⓟ  = Fitur premium
 ┃
-┃ ❖ _.attp_  [ teks ] Ⓛ
-┃ ❖ _.getexif_  [ reply sticker ]
-┃ ❖ _.horny_  [ reply media ] Ⓛ
-┃ ❖ _.memecreator_  [ teks|teks ] Ⓛ
-┃ ❖ _.quotemaker_  [ teks|nama ] Ⓛ
-┃ ❖ _.run_ Ⓛ
-┃ ❖ _.rip_  [ @user ] Ⓛ
-┃ ❖ _.semoji_  [ type|emoji ] Ⓛ
-┃ ❖ _.sgay_  [ reply media ] Ⓛ
-┃ ❖ _.simpcard_  [ reply media ] Ⓛ
-┃ ❖ _.smeme_  [ teks|teks ] Ⓛ
-┃ ❖ _.stickermeme_  [ teks|teks ] Ⓛ
-┃ ❖ _.sticker_  [ reply media ] Ⓛ
-┃ ❖ _.sticker_  [ url ] Ⓛ
-┃ ❖ _.stickergif_  [ reply media ] Ⓛ
-┃ ❖ _.stickergif_  [ url ] Ⓛ
-┃ ❖ _.stickfilter_  [ filter ] Ⓛ
-┃ ❖ _.stickerrip_  [ reply media ] Ⓛ
-┃ ❖ _.togif_  [ reply sticker ] Ⓛ
-┃ ❖ _.toimg_  [ reply sticker ] Ⓛ
-┃ ❖ _.tovideo_  [ reply sticker ] Ⓛ
-┃ ❖ _.trigger_  [ reply media ] Ⓛ
-┃ ❖ _.ttp_  [ teks ] Ⓛ
-┃ ❖ _.tweet_  [ username|tweet ] Ⓟ
-┃ ❖ _.dttp_  [ teks ] Ⓛ
-┃ ❖ _.wanted_  [ reply media ] Ⓛ
-┃ ❖ _.wasted_  [ reply media ] Ⓛ
-┃ ❖ _.wm_  [ teks|teks ] Ⓟ
-┃ ❖ _.ytcomment_  [ teks ] Ⓛ
+┃ ❖ _${usedPrefix}attp_  [ teks ] Ⓛ
+┃ ❖ _${usedPrefix}getexif_  [ reply sticker ]
+┃ ❖ _${usedPrefix}horny_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}memecreator_  [ teks|teks ] Ⓛ
+┃ ❖ _${usedPrefix}quotemaker_  [ teks|nama ] Ⓛ
+┃ ❖ _${usedPrefix}run_ Ⓛ
+┃ ❖ _${usedPrefix}rip_  [ @user ] Ⓛ
+┃ ❖ _${usedPrefix}semoji_  [ type|emoji ] Ⓛ
+┃ ❖ _${usedPrefix}sgay_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}simpcard_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}smeme_  [ teks|teks ] Ⓛ
+┃ ❖ _${usedPrefix}stickermeme_  [ teks|teks ] Ⓛ
+┃ ❖ _${usedPrefix}sticker_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}sticker_  [ url ] Ⓛ
+┃ ❖ _${usedPrefix}stickergif_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}stickergif_  [ url ] Ⓛ
+┃ ❖ _${usedPrefix}stickfilter_  [ filter ] Ⓛ
+┃ ❖ _${usedPrefix}stickerrip_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}togif_  [ reply sticker ] Ⓛ
+┃ ❖ _${usedPrefix}toimg_  [ reply sticker ] Ⓛ
+┃ ❖ _${usedPrefix}tovideo_  [ reply sticker ] Ⓛ
+┃ ❖ _${usedPrefix}trigger_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}ttp_  [ teks ] Ⓛ
+┃ ❖ _${usedPrefix}tweet_  [ username|tweet ] Ⓟ
+┃ ❖ _${usedPrefix}dttp_  [ teks ] Ⓛ
+┃ ❖ _${usedPrefix}wanted_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}wasted_  [ reply media ] Ⓛ
+┃ ❖ _${usedPrefix}wm_  [ teks|teks ] Ⓟ
+┃ ❖ _${usedPrefix}ytcomment_  [ teks ] Ⓛ
 ┗ ┅ ━━━━━━━━━━
 `.trim()
     conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Sticker and Maker', 'status@broadcast')
