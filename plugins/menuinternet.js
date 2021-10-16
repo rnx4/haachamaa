@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ╭─ *「 Menu Internet 」*
@@ -6,33 +6,33 @@ let teks = `
 │     Ⓛ  = limit
 │
 │
-│ ~ _.brainly_  [ soal ] Ⓛ
-│ ~ _.cerpen_  Ⓛ
-│ ~ _.chord_  [ judul lagu ] Ⓛ
-│ ~ _.infocuaca_  [ kota ]
-│ ~ _.drakor_  [ judul ] Ⓛ
-│ ~ _.fetch_  [ url ]
-│ ~ _.get_  [ url ]
-│ ~ _.google_  [ pencarian ] Ⓛ
-│ ~ _.kanji_  Ⓛ
-│ ~ _.lirik_  [ judul lagu ] Ⓛ
-│ ~ _.lrc_  [ judul lagu ] Ⓛ
-│ ~ _.ss_  [ url ] Ⓛ
-│ ~ _.ssweb_  [ url ] Ⓛ
-│ ~ _.wiki_  [ query ] Ⓛ
-│ ~ _.wikipedia_  [ query ]
-│ ~ _.calc_  [ expression ]
-│ ~ _.base64_
-│ ~ _.carigrup_  [ pencarian ] Ⓛ
-│ ~ _.githubsearch_  [ pencarian ] Ⓛ
-│ ~ _.inspect_  [ link whatsapp ] Ⓛ
-│ ~ _.kodebahasa_
-│ ~ _.pastebin_  [ opsional ] Ⓛ
-│ ~ _.ping_
-│ ~ _.speed_
-│ ~ _.style_  [ teks ]
-│ ~ _.tr_  [ lang  teks ]
-│ ~ _.tts_  [ lang  teks ]
+│ ~ _${usedPrefix}brainly_  [ soal ] Ⓛ
+│ ~ _${usedPrefix}cekresi_  [ kurir|resi ]
+│ ~ _${usedPrefix}cerpen_  Ⓛ
+│ ~ _${usedPrefix}chord_  [ judul lagu ] Ⓛ
+│ ~ _${usedPrefix}infocuaca_  [ kota ]
+│ ~ _${usedPrefix}drakor_  [ judul ] Ⓛ
+│ ~ _${usedPrefix}fetch_  [ url ]
+│ ~ _${usedPrefix}get_  [ url ]
+│ ~ _${usedPrefix}google_  [ pencarian ] Ⓛ
+│ ~ _${usedPrefix}kanji_  Ⓛ
+│ ~ _${usedPrefix}lirik_  [ judul lagu ] Ⓛ
+│ ~ _${usedPrefix}lk21_  [ judul film ] Ⓛ
+│ ~ _${usedPrefix}lrc_  [ judul lagu ] Ⓛ
+│ ~ _${usedPrefix}wiki_  [ query ] Ⓛ
+│ ~ _${usedPrefix}wikipedia_  [ query ]
+│ ~ _${usedPrefix}calc_  [ expression ]
+│ ~ _${usedPrefix}base64_
+│ ~ _${usedPrefix}carigrup_  [ pencarian ] Ⓛ
+│ ~ _${usedPrefix}githubsearch_  [ pencarian ] Ⓛ
+│ ~ _${usedPrefix}inspect_  [ link whatsapp ] Ⓛ
+│ ~ _${usedPrefix}kodebahasa_
+│ ~ _${usedPrefix}pastebin_  [ opsional ] Ⓛ
+│ ~ _${usedPrefix}ping_
+│ ~ _${usedPrefix}speed_
+│ ~ _${usedPrefix}style_  [ teks ]
+│ ~ _${usedPrefix}tr_  [ lang  teks ]
+│ ~ _${usedPrefix}tts_  [ lang  teks ]
 ╰────────
 `.trim()
     conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Penelusuran dan Internet', 'status@broadcast')
