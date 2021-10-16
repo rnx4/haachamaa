@@ -31,9 +31,10 @@ let teks = `
 ┊ ⍚ _${usedPrefix}smile_  Ⓛ
 ┊ ⍚ _${usedPrefix}smug_  Ⓛ
 ┊ ⍚ _${usedPrefix}stonk_  Ⓛ
+┊ ⍚ _${usedPrefix}tickle_  Ⓛ
 ┊ ⍚ _${usedPrefix}wave_  Ⓛ
 ┊ ⍚ _${usedPrefix}wink_  Ⓛ
-┊ ⍚ _${usedPrefix}wuii  Ⓛ
+┊ ⍚ _${usedPrefix}wuii_  Ⓛ
 ┊ ⍚ _${usedPrefix}yeey_  Ⓛ
 ╰────────
 `.trim()
