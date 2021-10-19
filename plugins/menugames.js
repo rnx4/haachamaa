@@ -24,6 +24,7 @@ let teks = `
 ┃ ❖ _${usedPrefix}tebakbendera_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakchara_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakgambar_  Ⓛ
+┃ ❖ _${usedPrefix}tebakgame_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakkata_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakkimia_  Ⓛ
 ┃ ❖ _${usedPrefix}tebaklirik_ Ⓛ
@@ -36,7 +37,7 @@ let teks = `
 ┃ ❖ _${usedPrefix}wordorder_  Ⓛ
 ┗ ┅ ━━━━━━━━━━
 `.trim()
-  conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Games Menu', 'status@broadcast')
+  conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu For Playing Games And Have Fun', 'status@broadcast')
   }
 handler.help = ['gamesmenu']
 handler.tags = ['menutest']
