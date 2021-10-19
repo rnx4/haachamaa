@@ -10,7 +10,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) =>  {
         if (/use|pakai/i.test(command)) {
             try {
                 let count = (/[0-9]/g.test(args[1])) ? !args[1] || args.length < 2 ? Math.max((Math.ceil((100 - global.DATABASE._data.users[m.sender].healt) / usepotion)), 1) : Math.max(args[1], 1) : Math.max((Math.ceil((100 - global.DATABASE._data.users[m.sender].healt) / usepotion)), 1)
-                 let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + '* 🧃 Potion')
+                 let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + '* Potion 🧃')
                  if (args[0] === 'potion') {
                     if (global.DATABASE._data.users[m.sender].healt < 100) {
                         if (global.DATABASE._data.users[m.sender].potion >= count * 1) {
@@ -33,7 +33,7 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) =>  {
         } else if (/heal/i.test(command)) {
             try {
                 let count = (/[0-9]/g.test(args[0])) ? !args[0] || args.length < 1 ? Math.max((Math.ceil((100 - global.DATABASE._data.users[m.sender].healt) / usepotion)), 1) : Math.max(args[0], 1) : Math.max((Math.ceil((100 - global.DATABASE._data.users[m.sender].healt) / usepotion)), 1)
-                let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + '* 🧃 Potion')
+                let msgsucces = (pickRandom(['success memakai', 'Nice succes menggunakan', 'berhasil meminum ', 'primitif anda menggunakan', 'anda memakai', 'Anda menggunakan']) + ' *' + (count * 1) + '* Potion 🧃')
                 if (global.DATABASE._data.users[m.sender].healt < 100) {
                     if (global.DATABASE._data.users[m.sender].potion >= count * 1) {
                         global.DATABASE._data.users[m.sender].potion -= count * 1
