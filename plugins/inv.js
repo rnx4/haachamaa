@@ -18,7 +18,17 @@ let handler = async (m, { conn, usedPrefix }) => {
     let uncommon = global.DATABASE._data.users[m.sender].uncommon
     let mythic = global.DATABASE._data.users[m.sender].mythic
     let legendary = global.DATABASE._data.users[m.sender].legendary
+    let slime = global.DATABASE._data.users[m.sender].slime
+    let goblin = global.DATABASE._data.users[m.sender].goblin
+    let skeleton = global.DATABASE._data.users[m.sender].skeleton
+    let wolf = global.DATABASE._data.users[m.sender].wolf
+    let kayu = global.DATABASE._data.users[m.sender].kayu
+    let sprtgrass = global.DATABASE._data.users[m.sender].sprtgrass
+    let mdgrleaf = global.DATABASE._data.users[m.sender].mdgrleaf
+    let hpktplant = global.DATABASE._data.users[m.sender].hpktplant
+    let spotion = global.DATABASE._data.users[m.sender].spotion
     let level = global.DATABASE._data.users[m.sender].level
+    let role = global.DATABASE._data.users[m.sender].role
     let koin = global.DATABASE._data.users[m.sender].koin
     let exp = global.DATABASE._data.users[m.sender].exp
     let uang = global.DATABASE._data.users[m.sender].uang
@@ -52,18 +62,29 @@ Koin: *${koin}*
 Uang: *${uang}*
 Level: *${level}*
 Exp: *${exp}*\n
-*Inventory*
+*「 Inventori 」*
 Diamond: *${diamond}*
 Potion: *${potion}*
-Sampah: *${sampah}*
 Makanan Pet: *${makananpet}*
-Total inv: *${diamond + potion + sampah + makananpet}* item\n
-*Crate*
+Kayu Bakar: *${kayu}*
+Sampah: *${sampah}*
+
+Total item: *${diamond + potion + makananpet + kayu + sampah}* item\n
+*「 Monster Buruan 」*
+Slime: *${slime}*
+Goblin: *${goblin}*
+White Skeleton: *${skeleton}*
+Dark StarWolf: *${wolf}*
+
+Total monster: *${slime + goblin + skeleton + wolf}* monster\n
+*「 Crate 」*
 Common: *${common}*
 Uncommon: *${uncommon}*
 Mythic: *${mythic}*
 Legendary: *${legendary}*
-Pet: *${pet}*\n
+Pet: *${pet}*
+
+Total crate: *${common + uncommon + mythic + legendary}* crate\n
 *Pet*
 Kuda: *${kuda == 0 ? 'Tidak Punya' : '' || kuda == 1 ? 'Level 1' : '' || kuda == 2 ? 'Level 2' : '' || kuda == 3 ? 'Level 3' : '' || kuda == 4 ? 'Level 4' : '' || kuda == 5 ? 'Level MAX' : ''}*
 Rubah: *${rubah == 0 ? 'Tidak Punya' : '' || rubah == 1 ? 'Level 1' : '' || rubah == 2 ? 'Level 2' : '' || rubah == 3 ? 'Level 3' : '' || rubah == 4 ? 'Level 4' : '' || rubah == 5 ? 'Level MAX' : ''}*
@@ -71,8 +92,9 @@ Kucing: *${kucing == 0 ? 'Tidak Punya' : '' || kucing == 1 ? 'Level 1' : '' || k
 Anjing: *${anjing == 0 ? 'Tidak Punya' : '' || anjing == 1 ? 'Level 1' : '' || anjing == 2 ? 'Level 2' : '' || anjing == 3 ? 'Level 3' : '' || anjing == 4 ? 'Level 4' : '' || anjing == 5 ? 'Level MAX' : ''}*\n\n
 *Progres*\n
 ╭────────────────
-│Level *${level}* To Level *${level}*
-│Exp *${exp}* -> *${max}*
+│Level *${level}*
+│Exp *${exp}*
+│Rank *${role}*
 ╰────────────────
 ╭────────────────
 │Rubah ${rubah == 0 ? 'Tidak Punya' : '' || rubah > 0 && rubah < 5 ? `Level *${rubah}* To level *${rubah + 1}*\n│Exp *${_rubah}* -> *${rubah *100}*` : '' || rubah == 9 ? '*Max Level*' : ''}
