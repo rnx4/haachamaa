@@ -7,26 +7,31 @@ let teks = `
 │╭─[ *Profile* ]
 ││
 ││ • *${usedPrefix}profile*
-││    Untuk mengetahui Informasimu, dll
+││    Untuk mengetahui Informasi saldo, dll
+││
+││ • *${usedPrefix}rank*
+││ • *${usedPrefix}rankcard*
+││    Untuk mengecek level, ranking, dll
 ││
 ││ • *${usedPrefix}inv*
 ││ • *${usedPrefix}inventory*
 ││ • *${usedPrefix}perlengkapan*
-││    Untuk mengecek nyawa, uang, dll.
+││    Untuk mengecek nyawa, item, dll.
 │╰────────────────
 │
 │
-│╭─[ *Bekerja* ]
+│╭─[ *Berpetualang* ]
 ││
 ││ • *${usedPrefix}mulung*
 ││ • *${usedPrefix}adventure*
 ││ • *${usedPrefix}work*
 ││   Untuk mencari resource seperti 
-││   Uang, Koin, Exp, dll..,dibutuhkan  
+││   Uang, Koin, Exp, dll.., dibutuhkan  
 ││   minimal 80 nyawa untuk bisa 
 ││   melakukannya dan, kamu tidak 
 ││   dapat spam karena ada delay 5 menit
 ││
+││ • *${usedPrefix}heal
 ││ • *${usedPrefix}use potion <jumlah>*
 ││    Untuk memakai potion dan untuk 
 ││    mengisi nyawa/health
@@ -36,13 +41,30 @@ let teks = `
 │╰────────────────
 │
 │
+│╭─[ *Dungeon* ]
+││
+││ • *${usedPrefix}gasdungeon*
+││    Untuk menangkap monster dan
+││    mencari tanaman herbal.., dibutuhkan
+││    minimal 90 nyawa untuk bisa 
+││    melakukannya dan, kamu tidak 
+││    dapat spam karena ada delay 5 menit
+││ 
+││ • *${usedPrefix}racik*
+││ • *${usedPrefix}meracik*
+││    Untuk meracik Small Potion dan
+││    dapat di tukarkan dengan Potion
+││
+││ • *${usedPrefix}barter*
+││    Untuk menukarkan Small Potion
+││    menjadi Potion
+│╰────────────────
+│
+│
 │╭─[ *Toko* ]
 ││ 
 ││ • *${usedPrefix}shop*
 ││    Untuk melihat item dan harganya
-││
-││ • *${usedPrefix}shop buy potion <jumlah>*
-││    Untuk membeli potion
 ││
 ││ • *${usedPrefix}shop buy <item> <jumlah>*
 ││    Untuk membeli item
