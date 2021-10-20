@@ -11,8 +11,8 @@ module.exports = {
     if (!chatUpdate.messages && !chatUpdate.count) return
     let m = chatUpdate.messages.all()[0]
     try {
-    	simple.smsg(this, m)
-    	switch (m.mtype) {
+	simple.smsg(this, m)
+	switch (m.mtype) {
         case MessageType.image:
         case MessageType.video:
         case MessageType.audio:
@@ -28,7 +28,7 @@ module.exports = {
         if (typeof user !== 'object') global.DATABASE._data.users[m.sender] = {}
         if (user) {
           if (!isNumber(user.lastadventure)) user.lastadventure = 0
-          if (!isNumber(user.healt)) user.healt = 0
+          if (!isNumber(user.healt)) user.healt = 100
           if (!isNumber(user.koin)) user.koin = 0
           if (!isNumber(user.diamond)) user.diamond = 0
           
@@ -49,6 +49,17 @@ module.exports = {
           if (!isNumber(user.rubahlastclaim)) user.rubahlastclaim = 0
           if (!isNumber(user.anjing)) user.anjing = 0
           if (!isNumber(user.anjinglastclaim)) user.anjinglastclaim = 0
+          
+          if (!isNumber(user.slime)) user.slime = 0
+          if (!isNumber(user.skeleton)) user.skeleton = 0
+          if (!isNumber(user.goblin)) user.goblin = 0
+          if (!isNumber(user.wolf)) user.wolf = 0
+          if (!isNumber(user.sprtgrass)) user.sprtgrass = 0
+          if (!isNumber(user.mdgrleaf)) user.mdgrleaf = 0
+          if (!isNumber(user.hpktplant)) user.hpktplant = 0
+          if (!isNumber(user.spotion)) user.spotion = 0
+          
+          if (!isNumber(user.lastdungeon)) user.lastdungeon = 0
           
           if (!isNumber(user.anakkucing)) user.anakkucing = 0
           if (!isNumber(user.anakkuda)) user.anakkuda = 0
@@ -90,6 +101,14 @@ module.exports = {
           pet: 0,
           potion: 0,
           sampah: 0,
+          slime: 0,
+          goblin: 0,
+          skeleton: 0,
+          wolf: 0,
+          sprtgrass: 0,
+          mdgrleaf: 0,
+          hpktplant: 0,
+          spotion: 0,
           kucing: 0,
           kucinglastclaim: 0,
           kuda: 0,
@@ -104,6 +123,7 @@ module.exports = {
           anakanjing: 0,
           makananpet: 0,
           lastadventure: 0,
+          lastdungeon: 0,
           lastclaim: 0,
           lastdaily: 0,
           lastgift: 0,
@@ -435,9 +455,9 @@ Untuk mematikan fitur ini, ketik
 global.dfail = (type, m, conn, usedPrefix) => {
   let msg = {
     rowner: 'Perintah ini hanya dapat digunakan oleh _*Master*_',
-    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner*_!',
-    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Perintah ini hanya untuk member _*Premium*_ !',
+    owner: 'Perintah ini hanya dapat digunakan oleh _*Owner!*_',
+    mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator!*_',
+    premium: 'Perintah ini hanya untuk member _*Premium!*_',
     group: 'Perintah ini hanya dapat digunakan di grup!',
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
     admin: 'Perintah ini hanya untuk *Admin* grup!',
