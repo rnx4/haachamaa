@@ -43,10 +43,10 @@ Common:     ${Scommon}
 Uncommon:  ${Suncommon}
 Mythic:     ${Smythic}
 Legendary: ${Slegendary}
-Slime: ${slime}
-Goblin: ${goblin}
-Skeleton: ${skeleton}
-Wolf: ${wolf}
+Slime: ${Sslime}
+Goblin: ${Sgoblin}
+Skeleton: ${Sskeleton}
+Wolf: ${Swolf}
 Pet: ${Spet}
 Sampah:     ${Ssampah}
 `.trim()
