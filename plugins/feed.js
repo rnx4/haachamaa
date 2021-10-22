@@ -95,7 +95,7 @@ let handler = async (m, { conn, args, usedPrefix }) => {
                         }
                     }
                 } else m.reply(`Makanan pet kamu tidak cukup`)
-            } else m.reply(`Pet kamu sudah kenyang, coba kasih makan *${waktur}* lagi`)
+            } else m.reply(`Pet kamu sudah kenyang, coba kasih makan *${waktua}* lagi`)
             break
         default:
             return conn.reply(m.chat, `${usedPrefix}feed [ anjing | kucing | rubah | kuda ]\nContoh penggunaan: *${usedPrefix}feed kucing*`, m)
