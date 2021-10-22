@@ -28,7 +28,7 @@ let teks = `
 │ - _${usedPrefix}daftar_  [ nama|umur ]
 │ - _${usedPrefix}register_  [ nama|umur ]
 │ - _${usedPrefix}tf_  [ uang @user ] Ⓛ
-│ - _${usedPrefix}transfer_  [ uang @user ]
+│ - _${usedPrefix}transfer_  [ uang @user ] Ⓛ
 │ - _${usedPrefix}unreg_  [ SN|Serial number ]
 │ - _${usedPrefix}unregister_  [ SN|Serial number ]
 ╰──────
