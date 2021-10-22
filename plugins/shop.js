@@ -162,7 +162,7 @@ Sampah:     ${Ssampah}
                         } else conn.reply(m.chat, `Slime kamu tidak cukup`.trim(), m)
                         break
                     case 'goblin':
-                        if (global.DATABASE._data.users[m.sender].goblim >= count * 1) {
+                        if (global.DATABASE._data.users[m.sender].goblin >= count * 1) {
                             global.DATABASE._data.users[m.sender].koin += Sgoblin * count
                             global.DATABASE._data.users[m.sender].goblin -= count * 1
                             conn.reply(m.chat, `Succes menjual ${count} Goblin dengan harga ${Sgoblin * count} koin`.trim(), m)
@@ -174,6 +174,13 @@ Sampah:     ${Ssampah}
                             global.DATABASE._data.users[m.sender].skeleton -= count * 1
                             conn.reply(m.chat, `Succes menjual ${count} Skeleton dengan harga ${Sskeleton * count} koin`.trim(), m)
                         } else conn.reply(m.chat, `Skeleton kamu tidak cukup`.trim(), m)
+                        break
+                    case 'wolf':
+                        if (global.DATABASE._data.users[m.sender].wolf >= count * 1) {
+                            global.DATABASE._data.users[m.sender].koin += Swolf * count
+                            global.DATABASE._data.users[m.sender].wolf -= count * 1
+                            conn.reply(m.chat, `Succes menjual ${count} Wolf dengan harga ${Swolf * count} koin`.trim(), m)
+                        } else conn.reply(m.chat, `Wolf kamu tidak cukup`.trim(), m)
                         break
                     case 'common':
                         if (global.DATABASE._data.users[m.sender].common >= count * 1) {
@@ -318,7 +325,7 @@ Sampah:     ${Ssampah}
                     } else conn.reply(m.chat, `Slime kamu tidak cukup`.trim(), m)
                     break
                 case 'goblin':
-                    if (global.DATABASE._data.users[m.sender].goblim >= count * 1) {
+                    if (global.DATABASE._data.users[m.sender].goblin >= count * 1) {
                         global.DATABASE._data.users[m.sender].koin += Sgoblin * count
                         global.DATABASE._data.users[m.sender].goblin -= count * 1
                         conn.reply(m.chat, `Succes menjual ${count} Goblin dengan harga ${Sgoblin * count} koin`.trim(), m)
@@ -331,6 +338,13 @@ Sampah:     ${Ssampah}
                         conn.reply(m.chat, `Succes menjual ${count} Skeleton dengan harga ${Sskeleton * count} koin`.trim(), m)
                     } else conn.reply(m.chat, `Skeleton kamu tidak cukup`.trim(), m)
                     break
+                case 'wolf':
+                        if (global.DATABASE._data.users[m.sender].wolf >= count * 1) {
+                            global.DATABASE._data.users[m.sender].koin += Swolf * count
+                            global.DATABASE._data.users[m.sender].wolf -= count * 1
+                            conn.reply(m.chat, `Succes menjual ${count} Wolf dengan harga ${Swolf * count} koin`.trim(), m)
+                        } else conn.reply(m.chat, `Wolf kamu tidak cukup`.trim(), m)
+                        break
                 case 'pet':
                     if (global.DATABASE._data.users[m.sender].pet >= count * 1) {
                         global.DATABASE._data.users[m.sender].pet -= count * 1
