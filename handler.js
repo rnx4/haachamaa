@@ -40,6 +40,7 @@ module.exports = {
           
           if (!isNumber(user.potion)) user.potion = 0
           if (!isNumber(user.sampah)) user.sampah = 0
+          if (!isNumber(user.kayu)) user.kayu = 0
           
           if (!isNumber(user.kucing)) user.kucing = 0       
           if (!isNumber(user.kucinglastclaim)) user.kucinglastclaim = 0
@@ -105,6 +106,7 @@ module.exports = {
           goblin: 0,
           skeleton: 0,
           wolf: 0,
+          kayu: 0,
           sprtgrass: 0,
           mdgrleaf: 0,
           hpktplant: 0,
