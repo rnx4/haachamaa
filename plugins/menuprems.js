@@ -1,4 +1,4 @@
-let handler = async (m) => {
+let handler  = async (m, { conn, usedPrefix }) => {
   
 let teks = `
 ๑—————— *〔 Premium Menu 〕*
@@ -51,7 +51,7 @@ let teks = `
 ┊ ⌬ _${usedPrefix}ytmp4_  [ url ]
 ┊ ⌬ _${usedPrefix}yts_  [ pencarian ]
 ┊ ⌬ _${usedPrefix}ytv_  [ url ]
-┊ ⌬ _${usedPrefix}zettairyouiki
+┊ ⌬ _${usedPrefix}zettairyouiki_
 ๑———————————————๑
 `.trim()
   conn.fakeReply(m.chat, teks, '0@s.whatsapp.net', 'Menu Spesial Premium User', 'status@broadcast')
