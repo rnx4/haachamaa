@@ -17,7 +17,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ${json.soal}
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
-Ketik ${usedPrefix}clhint untuk bantuan
+Ketik *${usedPrefix}clhint* untuk bantuan
 Bonus: ${poin}
 `.trim()
   conn.caklontong[id] = [
