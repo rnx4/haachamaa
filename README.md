@@ -124,7 +124,7 @@ conn.logger.level = 'debug'
 
 ---------
 
-[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming) | [![unx](https://github.com/unx21.png?size=100)](https://github.com/unx21) |
-----|----|----|
-[Nurutomo](https://github.com/Nurutomo) | [BochilGaming](https://github.com/BochilGaming) | [U n x](https://github.com/unx21) |
-Original Creator | RPG Creator | Haachamaa Simp |
+[![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![BochilGaming](https://github.com/BochilGaming.png?size=100)](https://github.com/BochilGaming) | [![unx](https://github.com/unx21.png?size=100)](https://github.com/unx21) | [![Nathan](https://github.com/Sjsjix.png?size=100)](https://github.com/Snsjix) |
+----|----|----|----|
+[Nurutomo](https://github.com/Nurutomo) | [BochilGaming](https://github.com/BochilGaming) | [U n x](https://github.com/unx21) | [Nathan](https://github.com/Sjsjix) |
+Original Creator | RPG Creator | Haachamaa Simp | Most Active Contributor |
