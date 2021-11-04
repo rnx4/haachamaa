@@ -18,7 +18,9 @@ let teks = `
 ┃ ❖ _${usedPrefix}mitologites_  Ⓛ
 ┃ ❖ _${usedPrefix}siapakahaku_  Ⓛ
 ┃ ❖ _${usedPrefix}slot_  [ jumlah uang ] Ⓛ
-┃ ❖ _${usedPrefix}suit_  
+┃ ❖ _${usedPrefix}suit_
+┃ ❖ _${usedPrefix}suitpvp_  [ @user ]
+┃ ❖ _${usedPrefix}suit2_  [ @user ]
 ┃ ❖ _${usedPrefix}susunkata_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakanime_  Ⓛ
 ┃ ❖ _${usedPrefix}tebakbendera_  Ⓛ
