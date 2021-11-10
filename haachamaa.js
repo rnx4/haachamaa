@@ -7,12 +7,12 @@ const CFonts  = require('cfonts')
 CFonts.say('Haachamaaa\nUwuwuwuululu', {
   font: 'chrome',
   align: 'center',
-  gradient: ['yellow', 'magenta']
+  gradient: ['cyan', 'magenta']
 })
 CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']
+  gradient: ['yellow', 'magenta']
 })
 
 var isRunning = false
@@ -27,7 +27,7 @@ function start(file) {
   CFonts.say([process.argv[0], ...args].join(' '), {
     font: 'console',
     align: 'center',
-    gradient: ['cyan', 'magenta']
+    gradient: ['red', 'magenta']
   })
   let p = spawn(process.argv[0], args, {
     stdio: ['inherit', 'inherit', 'inherit', 'ipc']
