@@ -10,6 +10,8 @@ let handler = async (m) => {
         m.reply(util.format(JSON.parse(img.exif.slice(22).toString())))
     }
 }
+//handler.help = ['getexif']
+//handler.tags = ['sticker']
 
 handler.command = ['getexif']
 
