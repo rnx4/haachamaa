@@ -33,16 +33,7 @@ let handler = async function (m, { text, usedPrefix }) {
  _Simpan Serial Number Anda!_
  _Jangan Lupa Untuk ${usedPrefix}claim Dan ${usedPrefix}mining_
 `.trim()
-await conn.reply(m.chat, caption,/* { 
-  key: { 
-    remoteJid: 'status@broadcast', 
-    participant: '0@s.whatsapp.net', 
-    fromMe: false 
-  }, message: { 
-    "imageMessage": { 
-      "mimetype": "image/jpeg", 
-      "caption": `Registration Successful!`, 
-      "jpegThumbnail": tnbot} } }, { contextInfo: { mentionedJid: [m.sender] } }*/m)
+conn.fakeReply(m.chat, caption, '0@s.whatsapp.net', ` *Registrasi Sukses !!!*`, 'status@broadcast')
 global.DATABASE._data.users[m.sender].uang += 10000
 }
 
