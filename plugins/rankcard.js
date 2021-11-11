@@ -16,7 +16,7 @@ await m.reply(global.wait)
 let res = global.API('http://hardianto-chan.herokuapp.com', '/api/rankcard', {
     profile: await conn.getProfilePicture(m.sender).catch(_ => ''),
     name: nama,
-    bg: 'https://images3.alphacoders.com/934/934694.png',
+    bg: 'https://telegra.ph/file/b58b1d7c23a0294cf2516.jpg',
     needxp: max,
     curxp: exp,
     level: level,
@@ -29,8 +29,6 @@ let caption = `
 *⚜️Rank:* ${role}
 *🔰Level:* ${level}
 *🔗Exp :* ${exp} --> ${max}
-
-_Create by @Kokoronationz_
 `.trim()
     conn.sendFile(m.chat, res, 'test.jpg', caption, m, false)
 } 
