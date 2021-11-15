@@ -1,12 +1,9 @@
 # Hii &nbsp;<a href="Hey"><img src="https://user-images.githubusercontent.com/84166927/131398029-d0af4153-3ebe-4918-bceb-59afe3c10fca.gif" width="48px"></a>
 
-## Uwuwuwwlulululuuuu
+## Haachamaa Chamaa
 
 ![AkaiHaato](https://user-images.githubusercontent.com/84166927/137114860-c6ddb91f-5268-4211-b41d-d423d336663d.png)
 
-
-#### Join Heree Bruhh
-[![Heree](https://img.shields.io/badge/Heree%20-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/Ij7zZoDTDgHAi9TTfzu0ay)
 
 <p align="center">
 <a href="#"><img title="Haachamaa" src="https://img.shields.io/badge/Haachamaaaa-yellow?color=gold&style=flat-square"></a>
@@ -25,6 +22,8 @@ Original [`wabot-aq`](https://GitHub.com/Nurutomo/wabot-aq)
 RPG Source [`games-wabot`](https://GitHub.com/BochilGaming/games-wabot)
 
 My Sister [`Violet`](https://GitHub.com/unx21/violet)
+
+New Friend [`Ayame`](https://GitHub.com/unx21/ayame)
 
 ### Prefix
 .  #  +  ×  ÷  /  !  %  &  -  : (default)
