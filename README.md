@@ -2,7 +2,7 @@
 
 ## Haachamaa Chamaa
 
-![AkaiHaato](https://user-images.githubusercontent.com/84166927/137114860-c6ddb91f-5268-4211-b41d-d423d336663d.png)
+![AhhChamaa](https://user-images.githubusercontent.com/84166927/145717664-61a2a3ea-be60-4d8e-a9dd-6610efbd0f84.jpg)
 
 
 <p align="center">
@@ -21,9 +21,6 @@ Original [`wabot-aq`](https://GitHub.com/Nurutomo/wabot-aq)
 
 RPG Source [`games-wabot`](https://GitHub.com/BochilGaming/games-wabot)
 
-My Sister [`Violet`](https://GitHub.com/unx21/violet)
-
-New Friend [`Ayame`](https://GitHub.com/unx21/ayame)
 
 ### Prefix
 .  #  +  ×  ÷  /  !  %  &  -  : (default)
