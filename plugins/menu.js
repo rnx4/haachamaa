@@ -32,6 +32,7 @@ const defaultMenu = {
 ║┊ ⍚ _Kokoronationz_
 ║┊ ⍚ _Unx21_
 ║┊ ⍚ _Rnx4_
+║┊ ⍚ _Lynx46_
 ║┊ ⍚ _Dan Kawan-kawan_
 ╰═ ┅ ═══════
 `.trimStart(),
