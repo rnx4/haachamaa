@@ -22,8 +22,6 @@ const defaultMenu = {
 ║┊ ⌬ *Uptime:* _%uptime_ (%muptime)
 ║┊ ⌬ *Database:* %rtotalreg of %totalreg
 ║┊ ⌬ *Owner:* _https://bit.ly/unxzx_
-║┊ ⌬ *Join Heree:*
-║┊ https://chat.whatsapp.com/Ij7zZoDTDgHAi9TTfzu0ay
 ╰═ ┅ ═══════
 %readmore
 ╭═══ *〘 Thanks To 〙*
@@ -31,9 +29,9 @@ const defaultMenu = {
 ║┊
 ║┊ ⍚ _Nurutomo_
 ║┊ ⍚ _BochilGaming_
-║┊ ⍚ _Ciel_
 ║┊ ⍚ _Kokoronationz_
 ║┊ ⍚ _Unx21_
+║┊ ⍚ _Rnx4_
 ║┊ ⍚ _Dan Kawan-kawan_
 ╰═ ┅ ═══════
 `.trimStart(),
